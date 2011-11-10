@@ -1,3 +1,7 @@
+" bundle enabled
+runtime bundle/pathogen/autoload/pathogen.vim
+call pathogen#infect()
+
 "let g:ruby_path = "C:\Ruby192\bin"
 
 color desert
