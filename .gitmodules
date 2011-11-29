@@ -52,3 +52,15 @@
 [submodule "bundle/rails"]
 	path = bundle/rails
 	url = https://github.com/tpope/vim-rails.git
+[submodule "bundle/blackboard"]
+	path = bundle/blackboard
+	url = https://github.com/rickharris/vim-blackboard.git
+[submodule "bundle/The-NERD-tree"]
+	path = bundle/The-NERD-tree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/less"]
+	path = bundle/less
+	url = https://github.com/groenewege/vim-less.git
+[submodule "bundle/The-NERD-Commenter"]
+	path = bundle/The-NERD-Commenter
+	url = https://github.com/vim-scripts/The-NERD-Commenter.git
