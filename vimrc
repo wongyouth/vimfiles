@@ -25,16 +25,41 @@ endif
 
 
 "tab navigation
-map <c-tab> gt
-map <c-s-tab> gT
-map <a-1> 1gt
-map <a-2> 2gt
-map <a-3> 3gt
-map <a-4> 4gt
-map <a-5> 5gt
-map <a-6> 6gt
-map <a-7> 7gt
-map <a-8> 8gt
-map <a-9> 9gt
-map <a-0> :tablast<cr>
+"map <c-tab> gt
+"map <c-s-tab> gT
+"map <a-1> 1gt
+"map <a-2> 2gt
+"map <a-3> 3gt
+"map <a-4> 4gt
+"map <a-5> 5gt
+"map <a-6> 6gt
+"map <a-7> 7gt
+"map <a-8> 8gt
+"map <a-9> 9gt
+"map <a-0> :tablast<cr>
+
+" ref: https://github.com/huacnlee/vimmate/blob/master/.gvimrc
+
+" NERDTree插件的快捷键
+imap <silent> <F7> <esc>:NERDTreeToggle<CR>
+nmap <silent> <F7> :NERDTreeToggle<CR>
+" BufExplorer 快捷键 {{{
+imap <silent> <C-b> <esc>:BufExplorer<CR>
+nmap <silent> <C-b> :BufExplorer<CR>
+" }}}
+
+
+" 窗口区域切换,Ctrl+↑↓←→ 来切换
+imap <silent> <C-left> <esc><C-W><left>
+vmap <silent> <C-left> <esc><C-W><left>
+nmap <silent> <C-left> <C-W><left>
+imap <silent> <C-right> <esc><C-W><right>
+vmap <silent> <C-right> <esc><C-W><right>
+nmap <silent> <C-right> <C-W><right>
+imap <silent> <C-up> <esc><C-W><up>
+vmap <silent> <C-up> <esc><C-W><up>
+nmap <silent> <C-up> <C-W><up>
+imap <silent> <C-down> <esc><C-W><down>
+vmap <silent> <C-down> <esc><C-W><down>
+nmap <silent> <C-down> <C-W><down>
 

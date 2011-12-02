@@ -37,9 +37,6 @@
 [submodule "bundle/matchit"]
 	path = bundle/matchit
 	url = https://github.com/edsono/vim-matchit.git
-[submodule "bundle/project"]
-	path = bundle/project
-	url = https://github.com/shemerey/vim-project.git
 [submodule "bundle/vim-css-hex"]
 	path = bundle/vim-css-hex
 	url = https://github.com/mamut/vim-css-hex.git
