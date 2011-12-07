@@ -1,11 +1,16 @@
-== Installation:
+== One Line Installation:
+
+Use one line installer
+  bash < <(curl http://raw.github.com/wongyouth/vimfiles/install)
+
+== Old School Installation:
 
   git clone git://github.com/wongyouth/vimfiles ~/vimfiles
 
 == Create symlinks:
 
   ln -s ~/vimfiles ~/.vim
-  ln -s ~/.vim/vimrc ~/vimrc
+  ln -s ~/.vim/vimrc ~/.vimrc
 
 == Switch to the `~/.vim` directory, and fetch submodules:
 
