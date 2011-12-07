@@ -1,7 +1,6 @@
 == One Line Installation:
 
-Use one line installer
-  bash < <(curl http://raw.github.com/wongyouth/vimfiles/install)
+  bash < <(curl https://raw.github.com/wongyouth/vimfiles/master/install)
 
 == Old School Installation:
 
