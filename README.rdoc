@@ -16,3 +16,47 @@
   cd ~/.vim
   git submodule init
   git submodule update
+
+== vim plugins included in the submodules
+
+* {*pathogen* Vim bundle support}[https://github.com/tpope/vim-pathogen]
+
+* {*fugitive* vim git support}[https://github.com/tpope/vim-fugitive]
+
+* {*surround* surround}[https://github.com/tpope/vim-surround]
+
+* {*abolish*}[https://github.com/tpope/vim-abolish]
+
+* {*speeddating*}[https://github.com/tpope/vim-speeddating]
+
+* {*delimitMate*}[https://github.com/Raimondi/delimitMate]
+
+* {*snipmate* for code snippets}[https://github.com/msanders/snipmate.vim]
+
+* {*peview*}[https://github.com/greyblake/vim-preview]
+
+* {*zencoding*}[https://github.com/mattn/zencoding-vim]
+
+* {*repeat*}[https://github.com/tpope/vim-repeat]
+
+* {*matchit*}[https://github.com/edsono/vim-matchit]
+
+* {*jsbeautify* for javascript format}[https://github.com/vim-scripts/jsbeautify]
+
+* {*tabular* for table fomat}[https://github.com/godlygeek/tabular]
+
+* {*rails* for rails application}[https://github.com/tpope/vim-rails]
+
+* {*blackboard* for color schema}[https://github.com/rickharris/vim-blackboard]
+
+* {*rename* for file management}[https://github.com/wojtekmach/vim-rename]
+
+* {*bufexplorer*}[https://github.com/corntrace/bufexplorer]
+
+* {*The-NERD-tree* for file management}[https://github.com/vim-scripts/The-NERD-tree]
+
+* {*The-NERD-Commenter* for comment}[https://github.com/vim-scripts/The-NERD-Commenter]
+
+* {*less* for show `less' css syntax}[https://github.com/groenewege/vim-less]
+
+* {*vim-css-hex* for css #xxx color automatically showed in the background}[https://github.com/mamut/vim-css-hex]
