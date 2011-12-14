@@ -9,9 +9,17 @@ color desert
 set fencs=utf-8,cp936,sjis
 "set enc=utf-8
 
-filetype plugin indent on
-syntax on
+"\u25b8 ▸, \u00ac ¬
+set listchars=tab:▸\ ,eol:¬
+nmap <leader>l :set list!<cr>
+set list
+
+" nontext color
+highlight NonText guifg=#4a4a59
+highlight SpecialKey guifg=#4a4a59
+
 set ts=2 sts=2 sw=2 et
+set number
 
 "quick load vimrc
 map <leader>v :tabedit $MYVIMRC<cr>
@@ -19,10 +27,26 @@ map <leader>e :tabedit $HOME/vimfiles/vimrc<cr>
 
 "rerun vimrc after save it
 if has("autocmd")
-    autocmd bufwritepost _vimrc source $MYVIMRC
-    autocmd bufwritepost vimrc source $MYVIMRC
+  " enbale file type detection
+  filetype plugin indent on
+  syntax on
+
+  " set rxls filetype to ruby
+  autocmd bufnewfile,bufread *.rxls set filetype=ruby
+
+  " reload vimrc when changed
+  autocmd bufwritepost _vimrc source $MYVIMRC
+  autocmd bufwritepost vimrc source $MYVIMRC
 endif
 
+if exists(":Tabularize")
+  nmap <leader>a= :Tabularize /=<cr>
+  vmap <leader>a= :Tabularize /=<cr>
+  nmap <leader>a: :Tabularize /:\zs<cr>
+  vmap <leader>a: :Tabularize /:\zs<cr>
+  nmap <leader>a> :Tabularize /=><cr>
+  vmap <leader>a> :Tabularize /=><cr>
+endif
 
 "tab navigation
 "map <c-tab> gt
