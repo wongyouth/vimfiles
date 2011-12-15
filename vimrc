@@ -65,12 +65,16 @@ endif
 " ref: https://github.com/huacnlee/vimmate/blob/master/.gvimrc
 
 " NERDTree插件的快捷键
-imap <silent> <F7> <esc>:NERDTreeToggle<CR>
-nmap <silent> <F7> :NERDTreeToggle<CR>
-" BufExplorer 快捷键 {{{
-imap <silent> <C-b> <esc>:BufExplorer<CR>
-nmap <silent> <C-b> :BufExplorer<CR>
-" }}}
+"if exists(":NERDTreeToggle")
+  imap <silent> <F7> <esc>:NERDTreeToggle<CR>
+  nmap <silent> <F7> :NERDTreeToggle<CR>
+"endif
+
+" BufExplorer 快捷键
+"if exists(":BufExplorer")
+  imap <silent> <C-b> <esc>:BufExplorer<CR>
+  nmap <silent> <C-b> :BufExplorer<CR>
+"endif
 
 
 " 窗口区域切换,Ctrl+↑↓←→ 来切换
