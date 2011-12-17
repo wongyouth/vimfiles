@@ -17,6 +17,19 @@
   git submodule init
   git submodule update
 
+== Usage
+
+* :Helptags for build vim plugin doc
+* F7 for NERDTree toggle
+* CTRL-B for showing BufExplorer
+* \cc for comment out
+* \c<SPACE> for remove comment mark
+* \a= for tabular =
+* \a: for tabular :
+* \a> for tabular =>
+* CTRL-y, for zencoding
+* refer to plugin doc for more help
+
 == vim plugins included in the submodules
 
 * {*pathogen* Vim bundle support}[https://github.com/tpope/vim-pathogen]
@@ -60,3 +73,5 @@
 * {*less* for show `less' css syntax}[https://github.com/groenewege/vim-less]
 
 * {*vim-css-hex* for css #xxx color automatically showed in the background}[https://github.com/mamut/vim-css-hex]
+
+* {*ctags.vim* for use ctags with vim}[https://github.com/vim-scripts/ctags.vim]

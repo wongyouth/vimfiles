@@ -1,10 +1,11 @@
-" bundle enabled
+" enable bundle
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
 "let g:ruby_path = "C:\Ruby192\bin"
 
 color desert
+"color blackboard
 
 set fencs=utf-8,cp936,sjis
 "set enc=utf-8
@@ -33,20 +34,22 @@ if has("autocmd")
 
   " set rxls filetype to ruby
   autocmd bufnewfile,bufread *.rxls set filetype=ruby
+  autocmd bufnewfile,bufread *.coffee set filetype=javascript
 
   " reload vimrc when changed
   autocmd bufwritepost _vimrc source $MYVIMRC
   autocmd bufwritepost vimrc source $MYVIMRC
 endif
 
-if exists(":Tabularize")
+" I dont know why exists() not work, fix me if you know it.
+"if exists(":Tabularize")
   nmap <leader>a= :Tabularize /=<cr>
   vmap <leader>a= :Tabularize /=<cr>
   nmap <leader>a: :Tabularize /:\zs<cr>
   vmap <leader>a: :Tabularize /:\zs<cr>
   nmap <leader>a> :Tabularize /=><cr>
   vmap <leader>a> :Tabularize /=><cr>
-endif
+"endif
 
 "tab navigation
 "map <c-tab> gt
