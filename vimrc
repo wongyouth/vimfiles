@@ -14,10 +14,24 @@ set fencs=utf-8,cp936,sjis
 set listchars=tab:▸\ ,eol:¬
 nmap <leader>l :set list!<cr>
 set list
+set laststatus=2
+set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{&fenc}]\ %-14.(%l,%c%V%)\ %P
 
 " nontext color
 highlight NonText guifg=#4a4a59
 highlight SpecialKey guifg=#4a4a59
+
+" highline current line & column
+set cursorline
+set cursorcolumn
+if has("autocmd")
+  " current line
+  au WinLeave * set nocursorline
+  au WinEnter * set cursorline
+  " current column
+  au WinLeave * set nocursorcolumn
+  au WinEnter * set cursorcolumn
+endif
 
 set ts=2 sts=2 sw=2 et
 set number
