@@ -16,6 +16,7 @@ nmap <leader>l :set list!<cr>
 set list
 set laststatus=2
 set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{&fenc}]\ %-14.(%l,%c%V%)\ %P
+set pastetoggle=<F4>
 
 " nontext color
 highlight NonText guifg=#4a4a59
@@ -23,6 +24,7 @@ highlight SpecialKey guifg=#4a4a59
 
 " highline current line & column
 set cursorline
+highlight cursorline term=reverse cterm=underline guibg=Grey40
 set cursorcolumn
 if has("autocmd")
   " current line
@@ -92,7 +94,6 @@ endif
   imap <silent> <C-b> <esc>:BufExplorer<CR>
   nmap <silent> <C-b> :BufExplorer<CR>
 "endif
-
 
 " 窗口区域切换,Ctrl+↑↓←→ 来切换
 imap <silent> <C-left> <esc><C-W><left>

@@ -21,14 +21,19 @@
 
 * :Helptags for build vim plugin doc
 * F7 for NERDTree toggle
+* F4 for paste toggle
 * CTRL-B for showing BufExplorer
-* \cc for comment out
-* \c<SPACE> for remove comment mark
-* \a= for tabular =
-* \a: for tabular :
-* \a> for tabular =>
+* <leader>cc for comment out
+* <leader>c<SPACE> for remove comment mark
+* <leader>a= for tabular =
+* <leader>a: for tabular :
+* <leader>a> for tabular =>
 * CTRL-y, for zencoding
+* yss- for <% -%>
+* yss= for <%= %>
 * refer to plugin doc for more help
+
+<leader> is <tt>\</tt> defaultly.
 
 == vim plugins included in the submodules
 
