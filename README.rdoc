@@ -33,7 +33,7 @@
 * yss= for <%= %>
 * refer to plugin doc for more help
 
-<leader> is <tt>\</tt> defaultly.
+<leader> in most cases is "\\" key.
 
 == vim plugins included in the submodules
 
@@ -51,7 +51,7 @@
 
 * {*snipmate* for code snippets}[https://github.com/msanders/snipmate.vim]
 
-* {*peview*}[https://github.com/greyblake/vim-preview]
+* {*preview*}[https://github.com/greyblake/vim-preview]
 
 * {*zencoding*}[https://github.com/mattn/zencoding-vim]
 
@@ -80,3 +80,5 @@
 * {*vim-css-hex* for css #xxx color automatically showed in the background}[https://github.com/mamut/vim-css-hex]
 
 * {*ctags.vim* for use ctags with vim}[https://github.com/vim-scripts/ctags.vim]
+
+* {*unimpaired.vim* for pairs of handy bracket mappings}[https://github.com/tpope/vim-unimpaired]

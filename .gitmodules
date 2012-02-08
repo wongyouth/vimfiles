@@ -64,3 +64,6 @@
 [submodule "bundle/ctags.vim"]
 	path = bundle/ctags.vim
 	url = https://github.com/vim-scripts/ctags.vim.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
