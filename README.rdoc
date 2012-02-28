@@ -1,18 +1,19 @@
+A handful of plugins for vim all maintained in one bundle subdirectory, useful vim configuration, espacially for Rails coding. All plugins are included as submodules, so you can get plugins updated in one command that makes life easier.
+
 == One Line Installation:
 
   bash < <(curl -s https://raw.github.com/wongyouth/vimfiles/master/install.sh)
 
 == Old School Installation:
 
+  # Checkout configuration files
   git clone git://github.com/wongyouth/vimfiles ~/vimfiles
 
-== Create symlinks:
-
+  # Create symlinks
   ln -s ~/vimfiles ~/.vim
-  ln -s ~/.vim/vimrc ~/.vimrc
+  echo "source ~/.vim/vimrc" > ~/.vimrc
 
-== Switch to the `~/.vim` directory, and fetch submodules:
-
+  # Switch to the `~/.vim` directory, and fetch submodules
   cd ~/.vim
   git submodule init
   git submodule update
@@ -24,7 +25,7 @@
 * F4 for paste toggle
 * CTRL-B for showing BufExplorer
 * <leader>cc for comment out
-* <leader>c<SPACE> for remove comment mark
+* <leader>c<SPACE> for removing comment mark
 * <leader>a= for tabular =
 * <leader>a: for tabular :
 * <leader>a> for tabular =>
