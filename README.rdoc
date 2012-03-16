@@ -83,3 +83,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 * {*ctags.vim* for use ctags with vim}[https://github.com/vim-scripts/ctags.vim]
 
 * {*unimpaired.vim* for pairs of handy bracket mappings}[https://github.com/tpope/vim-unimpaired]
+
+* {*vim-markdown*}[https://github.com/plasticboy/vim-markdown]
+
+* {*vim-rdoc*}[https://github.com/depuracao/vim-rdoc]
