@@ -6,6 +6,7 @@ call pathogen#infect()
 
 color desert
 "color blackboard
+set mouse=a
 
 set fencs=utf-8,cp936,sjis
 "set enc=utf-8
@@ -51,6 +52,9 @@ if has("autocmd")
   " set rxls filetype to ruby
   autocmd bufnewfile,bufread *.rxls set filetype=ruby
   autocmd bufnewfile,bufread *.coffee set filetype=javascript
+
+  " set thor filetype to ruby
+  autocmd bufnewfile,bufread *.thor set filetype=ruby
 
   " reload vimrc when changed
   autocmd bufwritepost _vimrc source $MYVIMRC
