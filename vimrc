@@ -51,7 +51,6 @@ if has("autocmd")
 
   " set rxls filetype to ruby
   autocmd bufnewfile,bufread *.rxls set filetype=ruby
-  autocmd bufnewfile,bufread *.coffee set filetype=javascript
 
   " set thor filetype to ruby
   autocmd bufnewfile,bufread *.thor set filetype=ruby
