@@ -117,7 +117,7 @@ let Tlist_Use_Right_Window   = 1
 nnoremap <silent> <F8> :TlistToggle<CR>
 
 " toggle for copy & paste
-nnoremap <silent> <F9> :set nu!<CR>:set list!<CR>
+nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
 
 " 窗口区域切换,Ctrl+↑↓←→ 来切换
 imap <silent> <C-left> <esc><C-W><left>
