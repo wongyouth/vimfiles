@@ -4,9 +4,19 @@ call pathogen#infect()
 
 "let g:ruby_path = "C:\Ruby192\bin"
 
+" --------------------
+" colorscheme
+" --------------------
 color desert
 "color blackboard
-set mouse=a
+"color solarized
+
+" do trick for show solarized correct
+set background=
+set background=dark
+
+"comment out to be able to copy from vim to system clipboard
+"set mouse=a
 
 set fencs=utf-8,cp936,sjis
 "set enc=utf-8
@@ -20,12 +30,12 @@ set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{
 set pastetoggle=<F4>
 
 " nontext color
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
+"highlight NonText guifg=#4a4a59
+"highlight SpecialKey guifg=#4a4a59
 
 " highline current line & column
 set cursorline
-highlight cursorline term=reverse cterm=underline guibg=Grey40
+highlight cursorline term=underline cterm=underline guibg=Grey40
 set cursorcolumn
 if has("autocmd")
   " current line
@@ -55,13 +65,17 @@ if has("autocmd")
   " set thor filetype to ruby
   autocmd bufnewfile,bufread *.thor set filetype=ruby
 
+  " --------------------------
+  " disabled for really slow after a few changes saved
   " reload vimrc when changed
-  autocmd bufwritepost _vimrc source $MYVIMRC
-  autocmd bufwritepost vimrc source $MYVIMRC
+  "autocmd bufwritepost _vimrc source $MYVIMRC
+  "autocmd bufwritepost vimrc source $MYVIMRC
 endif
 
 " I dont know why exists() not work, fix me if you know it.
 "if exists(":Tabularize")
+  nmap <leader>a# :Tabularize /#<cr>
+  vmap <leader>a# :Tabularize /#<cr>
   nmap <leader>a= :Tabularize /=<cr>
   vmap <leader>a= :Tabularize /=<cr>
   nmap <leader>a: :Tabularize /:\zs<cr>
@@ -98,6 +112,13 @@ endif
   nmap <silent> <C-b> :BufExplorer<CR>
 "endif
 
+" taglist
+let Tlist_Use_Right_Window   = 1
+nnoremap <silent> <F8> :TlistToggle<CR>
+
+" toggle for copy & paste
+nnoremap <silent> <F9> :set nu!<CR>:set list!<CR>
+
 " 窗口区域切换,Ctrl+↑↓←→ 来切换
 imap <silent> <C-left> <esc><C-W><left>
 vmap <silent> <C-left> <esc><C-W><left>
@@ -111,4 +132,3 @@ nmap <silent> <C-up> <C-W><up>
 imap <silent> <C-down> <esc><C-W><down>
 vmap <silent> <C-down> <esc><C-W><down>
 nmap <silent> <C-down> <C-W><down>
-
