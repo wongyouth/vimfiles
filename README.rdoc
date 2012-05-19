@@ -21,8 +21,9 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 == Usage
 
 * :Helptags for build vim plugin doc
-* F7 for NERDTree toggle
 * F4 for paste toggle
+* F7 for NERDTree toggle
+* F12 for mouse toggle
 * CTRL-B for showing BufExplorer
 * <leader>cc for comment out
 * <leader>c<SPACE> for removing comment mark
@@ -38,52 +39,58 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 == vim plugins included in the submodules
 
-* {*pathogen* Vim bundle support}[https://github.com/tpope/vim-pathogen]
+* {*pathogen*}[https://github.com/tpope/vim-pathogen] manage your runtimepath
 
-* {*fugitive* vim git support}[https://github.com/tpope/vim-fugitive]
+* {*fugitive*}[https://github.com/tpope/vim-fugitive] a Git wrapper so awesome, it should be illegal
 
-* {*surround* surround}[https://github.com/tpope/vim-surround]
+* {*rails*}[https://github.com/tpope/vim-rails] Ruby on Rails power tools, offers the following features for Ruby on Rails application development.
 
-* {*abolish*}[https://github.com/tpope/vim-abolish]
+* {*snipmate*}[https://github.com/msanders/snipmate.vim] aims to be a concise vim script that implements some of TextMate's snippets features in Vim.
 
-* {*speeddating*}[https://github.com/tpope/vim-speeddating]
+* {*ctrlp*}[https://github.com/kien/ctrlp.vim] Fuzzy file, buffer, mru and tag finder
 
-* {*delimitMate*}[https://github.com/Raimondi/delimitMate]
+* {*delimitMate*}[https://github.com/Raimondi/delimitMate] provides insert mode auto-completion for quotes, parens, brackets, etc.
 
-* {*snipmate* for code snippets}[https://github.com/msanders/snipmate.vim]
+* {*bufexplorer*}[https://github.com/corntrace/bufexplorer] With bufexplorer, you can quickly and easily switch between buffers
 
-* {*preview*}[https://github.com/greyblake/vim-preview]
+* {*togglemouse*}[https://github.com/nvie/vim-togglemouse] Toggles the mouse focus between Vim and your terminal emulator, allowing terminal emulator mouse commands, like copy/paste.
 
-* {*zencoding*}[https://github.com/mattn/zencoding-vim]
+* {*The-NERD-tree*}[https://github.com/vim-scripts/The-NERD-tree] A tree explorer plugin for navigating the filesystem
 
-* {*repeat*}[https://github.com/tpope/vim-repeat]
+* {*The-NERD-Commenter*}[https://github.com/vim-scripts/The-NERD-Commenter] A plugin that allows for easy commenting of code for many filetypes.
 
-* {*matchit*}[https://github.com/edsono/vim-matchit]
+* {*tabular*}[https://github.com/godlygeek/tabular] Vim script for text filtering and alignment
 
-* {*jsbeautify* for javascript format}[https://github.com/vim-scripts/jsbeautify]
+* {*zencoding*}[https://github.com/mattn/zencoding-vim] vim script support for expanding abbreviation like zen-coding.
 
-* {*tabular* for table fomat}[https://github.com/godlygeek/tabular]
+* {*unimpaired.vim*}[https://github.com/tpope/vim-unimpaired] pairs of handy bracket mappings
 
-* {*rails* for rails application}[https://github.com/tpope/vim-rails]
+* {*surround*}[https://github.com/tpope/vim-surround] quoting/parenthesizing made simple
 
-* {*blackboard* for color schema}[https://github.com/rickharris/vim-blackboard]
+* {*abolish*}[https://github.com/tpope/vim-abolish] easily search for, substitute, and abbreviate multiple variants of a word
 
-* {*rename* for file management}[https://github.com/wojtekmach/vim-rename]
+* {*speeddating*}[https://github.com/tpope/vim-speeddating] use CTRL-A/CTRL-X to increment dates, times, and more
 
-* {*bufexplorer*}[https://github.com/corntrace/bufexplorer]
+* {*repeat*}[https://github.com/tpope/vim-repeat] enable repeating supported plugin maps with "."
 
-* {*The-NERD-tree* for file management}[https://github.com/vim-scripts/The-NERD-tree]
+* {*matchit*}[https://github.com/edsono/vim-matchit] extended % matching for HTML, LaTeX, and many other languages
 
-* {*The-NERD-Commenter* for comment}[https://github.com/vim-scripts/The-NERD-Commenter]
+* {*jsbeautify*}[https://github.com/vim-scripts/jsbeautify] a javascript source code formatter. <leader>ff
 
-* {*less* for show `less' css syntax}[https://github.com/groenewege/vim-less]
+* {*rename*}[https://github.com/wojtekmach/vim-rename] Rename a buffer within Vim and on disk. :saveas
 
-* {*vim-css-hex* for css #xxx color automatically showed in the background}[https://github.com/mamut/vim-css-hex]
+* {*preview*}[https://github.com/greyblake/vim-preview] previewing markup files(markdown,rdoc,textile,html)
 
-* {*ctags.vim* for use ctags with vim}[https://github.com/vim-scripts/ctags.vim]
+* {*taglist.vim*}[https://github.com/vim-scripts/taglist.vim.git] Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
 
-* {*unimpaired.vim* for pairs of handy bracket mappings}[https://github.com/tpope/vim-unimpaired]
+* {*ctags.vim*}[https://github.com/vim-scripts/ctags.vim] Display function name in the title bar.
 
-* {*vim-markdown*}[https://github.com/plasticboy/vim-markdown]
+* {*less*}[https://github.com/groenewege/vim-less] vim syntax for LESS (dynamic CSS)
 
-* {*vim-rdoc*}[https://github.com/depuracao/vim-rdoc]
+* {*vim-markdown*}[https://github.com/plasticboy/vim-markdown] Markdown Vim Mode
+
+* {*vim-rdoc*}[https://github.com/depuracao/vim-rdoc] Rdoc Vim Mode
+
+* {*vim-css-hex* only work for gui environment}[https://github.com/mamut/vim-css-hex] Highlights hex codes in css files with colors they represent.
+
+* {*blackboard*}[https://github.com/rickharris/vim-blackboard] Textmate's Blackboard theme for vim (with iTerm2 theme)

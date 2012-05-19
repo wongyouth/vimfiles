@@ -1,3 +1,5 @@
+set nocompatible
+
 " enable bundle
 runtime bundle/pathogen/autoload/pathogen.vim
 call pathogen#infect()
@@ -15,8 +17,8 @@ color desert
 set background=
 set background=dark
 
-"comment out to be able to copy from vim to system clipboard
-"set mouse=a
+" toggle mouse with F12
+set mouse=a
 
 set fencs=utf-8,cp936,sjis
 "set enc=utf-8
@@ -28,6 +30,11 @@ set list
 set laststatus=2
 set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{&fenc}]\ %-14.(%l,%c%V%)\ %P
 set pastetoggle=<F4>
+set autoindent
+
+" This means that you can have unwritten changes to a file and open a new file
+" using :e, without being forced to write or undo your changes first. 
+set hidden
 
 " nontext color
 "highlight NonText guifg=#4a4a59
