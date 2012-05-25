@@ -88,3 +88,6 @@
 [submodule "bundle/vim-togglemouse"]
 	path = bundle/vim-togglemouse
 	url = https://github.com/nvie/vim-togglemouse.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
