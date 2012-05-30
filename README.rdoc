@@ -92,7 +92,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 * {*ctags.vim*}[https://github.com/vim-scripts/ctags.vim] Display function name in the title bar.
 
-* {*The-NERD-tree*}[https://github.com/vim-scripts/The-NERD-tree] A tree explorer plugin for navigating the filesystem
+* {*nerdtree*}[https://github.com/scrooloose/nerdtree.git] A tree explorer plugin for vim
 
 * {*bufexplorer*}[https://github.com/corntrace/bufexplorer] With bufexplorer, you can quickly and easily switch between buffers
 
