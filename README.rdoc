@@ -121,7 +121,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 * {tlib}[https://github.com/tomtom/tlib_vim] Some utility functions for VIM
 
-=== color schema
+=== color scheme
 
 * {*blackboard*}[https://github.com/rickharris/vim-blackboard] Textmate's Blackboard theme for vim (with iTerm2 theme)
 

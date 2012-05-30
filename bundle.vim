@@ -36,7 +36,7 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " tool for explorer
 Bundle 'corntrace/bufexplorer'
-Bundle 'vim-scripts/The-NERD-tree'
+Bundle 'scrooloose/nerdtree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ctags.vim'
@@ -48,7 +48,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
 " Bundle 'mamut/vim-css-hex' " need gui env
 
-" color schema
+" color scheme
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 
