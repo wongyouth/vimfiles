@@ -47,8 +47,9 @@ Bundle 'depuracao/vim-rdoc'
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 
+Bundle 'mattn/zencoding-vim'
 " alternative for zencoding
-Bundle 'rstacruz/sparkup'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " snipmate
 Bundle 'garbas/vim-snipmate'

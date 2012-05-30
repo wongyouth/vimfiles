@@ -3,7 +3,7 @@ filetype off                   " required!
 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
-source ~/.vim/bundlerc
+source ~/.vim/bundle.vim
 
 filetype plugin indent on     " required!
 

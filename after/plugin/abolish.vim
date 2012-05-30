@@ -1,2 +1,5 @@
-:Abolish destory destroy
+if !exists('g:loaded_abolish')
+  finish
+endif
+
 Abolish destory destroy
