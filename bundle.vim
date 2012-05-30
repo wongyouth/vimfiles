@@ -10,6 +10,7 @@ Bundle 'gmarik/vundle'
 "runtime bundle/pathogen/autoload/pathogen.vim
 "call pathogen#infect()
 
+" tpope plugins
 "Bundle 'tpope/tpope/vim-pathogen' " use vundle instead
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
@@ -19,25 +20,29 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-rails'
 
+" utility
 Bundle 'edsono/vim-matchit'
 Bundle 'Raimondi/delimitMate'
 Bundle 'greyblake/vim-preview'
 Bundle 'vim-scripts/jsbeautify'
-
-"Bundle 'wojtekmach/vim-rename' " use NERD tree menu instead
 Bundle 'vim-scripts/The-NERD-Commenter'
 Bundle 'godlygeek/tabular'
+Bundle 'nvie/vim-togglemouse'
+Bundle 'mattn/zencoding-vim'
+" alternative for zencoding
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+
+"Bundle 'wojtekmach/vim-rename' " use NERD tree menu instead
 
 " tool for explorer
 Bundle 'corntrace/bufexplorer'
 Bundle 'vim-scripts/The-NERD-tree'
 Bundle 'vim-scripts/taglist.vim'
 Bundle 'kien/ctrlp.vim'
-Bundle 'nvie/vim-togglemouse'
+Bundle 'vim-scripts/ctags.vim'
 
 " filetype syntax highlight
 Bundle 'groenewege/vim-less'
-Bundle 'vim-scripts/ctags.vim'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
@@ -46,10 +51,6 @@ Bundle 'depuracao/vim-rdoc'
 " color schema
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
-
-Bundle 'mattn/zencoding-vim'
-" alternative for zencoding
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " snipmate
 Bundle 'garbas/vim-snipmate'
