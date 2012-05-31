@@ -52,17 +52,6 @@ set nowrap
 set nobackup
 set noswapfile
 
-" hightlight search
-set incsearch
-set hlsearch
-
-" highlight trailing space
-if !exists('no_trailing_space_error')
-  au BufWinEnter * hi link TrailingSpace Error
-  au BufWinEnter * syn match TrailingSpace /\s\+$/ display
-endif
-
-
 "-----------------------
 " status line setting
 "-----------------------
@@ -73,10 +62,22 @@ set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{
 " invisible character setting
 "--------------------------------
 "unicode for \u25b8 for `▸', \u00ac for `¬'
-set listchars=tab:▸\ ,eol:¬
+"set listchars=tab:▸\ ,eol:¬
+set listchars=tab:▸\ 
 set list
 " map toggle, or use F4
 nmap <leader>l :set list!<cr>
+
+
+"------------------------------------
+" highlight trailing space
+"------------------------------------
+" comment out line below to unhighlight trailing space
+"let no_trailing_space_error = 1
+if !exists('no_trailing_space_error')
+  au BufWinEnter * hi link TrailingSpace Error
+  au BufWinEnter * syn match TrailingSpace /\s\+$/ display
+endif
 
 "--------------------------------------------------------
 " highline current line & column
@@ -93,6 +94,10 @@ if has("autocmd")
   au WinLeave * set nocursorcolumn
   au WinEnter * set cursorcolumn
 endif
+
+" hightlight search
+set incsearch
+set hlsearch
 
 "------------------------
 " for quick load vimrc
