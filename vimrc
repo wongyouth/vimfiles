@@ -50,6 +50,16 @@ set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 " using :e, without being forced to write or undo your changes first. 
 set hidden
 
+" show command menu, work great with snapmate-snippets
+set wildmenu
+
+" do not wrap line
+set nowrap
+
+" do not create backup, swap file, use git for version managment
+set nobackup
+set noswapfile
+
 "-----------------------
 " status line setting
 "-----------------------
@@ -64,12 +74,6 @@ set listchars=tab:▸\ ,eol:¬
 set list
 " map toggle, or use F4
 nmap <leader>l :set list!<cr>
-
-"----------------------------
-" Invisible character colors
-"----------------------------
-highlight NonText guifg=#4a4a59
-highlight SpecialKey guifg=#4a4a59
 
 "--------------------------------------------------------
 " highline current line & column
@@ -122,48 +126,6 @@ nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
 " toggle mouse with F12, for selection be copied to system clipboard
 set mouse=a
 
-"===============================
-" config for plugins
-"===============================
-
-"-------------------------
-" tabular shortcut
-"-------------------------
-if exists("g:tabular_loaded")
-  nmap <leader>a# :Tabularize /#<cr>
-  vmap <leader>a# :Tabularize /#<cr>
-  nmap <leader>a= :Tabularize /=<cr>
-  vmap <leader>a= :Tabularize /=<cr>
-  nmap <leader>a: :Tabularize /:\zs<cr>
-  vmap <leader>a: :Tabularize /:\zs<cr>
-  nmap <leader>a> :Tabularize /=><cr>
-  vmap <leader>a> :Tabularize /=><cr>
-endif
-
-"---------------------
-" NERDTree shortcut
-"---------------------
-if exists("loaded_nerd_tree")
-  imap <silent> <F7> <esc>:NERDTreeToggle<CR>
-  nmap <silent> <F7> :NERDTreeToggle<CR>
-endif
-
-"---------------------
-" taglist shortcut
-"---------------------
-if exists('loaded_taglist')
-  let Tlist_Use_Right_Window   = 1
-  nnoremap <silent> <F8> :TlistToggle<CR>
-endif
-
-"---------------------
-" BufExplorer shortcut
-"---------------------
-if exists("g:bufexplorer_version")
-  imap <silent> <C-b> <esc>:BufExplorer<CR>
-  nmap <silent> <C-b> :BufExplorer<CR>
-endif
-
 "-------------------------------
 " Windows switch with Ctrl+↑↓←→ 
 "-------------------------------
@@ -179,23 +141,4 @@ nmap <silent> <C-up> <C-W><up>
 imap <silent> <C-down> <esc><C-W><down>
 vmap <silent> <C-down> <esc><C-W><down>
 nmap <silent> <C-down> <C-W><down>
-
-"------------------------------
-"tab navigation
-" DOES NOT WORK on ubuntu box
-"------------------------------
-"map <c-tab> gt
-"map <c-s-tab> gT
-"map <a-1> 1gt
-"map <a-2> 2gt
-"map <a-3> 3gt
-"map <a-4> 4gt
-"map <a-5> 5gt
-"map <a-6> 6gt
-"map <a-7> 7gt
-"map <a-8> 8gt
-"map <a-9> 9gt
-"map <a-0> :tablast<cr>
-
-" ref: https://github.com/huacnlee/vimmate/blob/master/.gvimrc
 

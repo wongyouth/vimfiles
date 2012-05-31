@@ -46,7 +46,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
-" Bundle 'mamut/vim-css-hex' " need gui env
+Bundle 'mamut/vim-css-hex'
 
 " color scheme
 Bundle 'rickharris/vim-blackboard'
@@ -57,4 +57,4 @@ Bundle 'garbas/vim-snipmate'
 Bundle 'honza/snipmate-snippets'
 Bundle 'tomtom/tlib_vim'
 Bundle 'MarcWeber/vim-addon-mw-utils'
-
+Bundle 'endel/vim-github-colorscheme'

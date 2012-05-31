@@ -12,6 +12,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
   # Create symlinks
   ln -s ~/vimfiles ~/.vim
   echo "source ~/.vim/vimrc" > ~/.vimrc
+  echo "source ~/.vim/gvimrc" > ~/.gvimrc
 
   # Switch to the `~/.vim` directory, and fetch submodules
   cd ~/.vim
@@ -23,24 +24,24 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 == Usage
 
-* :Helptags for build vim plugin doc
 * F4 for paste toggle
 * F7 for NERDTree toggle
 * F8 for taglist toggle
 * F12 for mouse toggle
-* CTRL-B for showing BufExplorer
-* <leader>cc for comment out
-* <leader>c<SPACE> for removing comment mark
-* <leader>a= for tabular =
-* <leader>a: for tabular :
-* <leader>a> for tabular =>
+* <c-b> for showing BufExplorer
+* \\cc for comment out
+* \\c<SPACE> for removing comment mark
+* \\ff for js file formatting
+* \\a= for tabular =
+* \\a: for tabular :
+* \\a> for tabular =>
 * '<c-y>,' for zencoding
 * <c-e> for sparkup
 * yss- for <% -%>
 * yss= for <%= %>
-* refer to plugin doc for more help
+* ysiw" for wrap a word with ""
 
-<leader> in most cases is "\\" key.
+* refer to plugin doc for more help
 
 == vim plugins included in the submodules
 
@@ -109,7 +110,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 * {coffee-script}[https://github.com/kchmck/vim-coffee-script] CoffeeScript support for vim
 
-* {*vim-css-hex*}[https://github.com/mamut/vim-css-hex] Highlights hex codes in css files with colors they representa (only work in gui env)
+* {*vim-css-hex*}[https://github.com/mamut/vim-css-hex] Highlights hex codes in css files with colors they represent
 
 === snipmate
 
@@ -126,3 +127,5 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 * {*blackboard*}[https://github.com/rickharris/vim-blackboard] Textmate's Blackboard theme for vim (with iTerm2 theme)
 
 * {*solarized*}[https://github.com/altercation/vim-colors-solarized] precision colorscheme for the vim text editor
+
+* {*vim-github-colorscheme*}[https://github.com/endel/vim-github-colorscheme] A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
