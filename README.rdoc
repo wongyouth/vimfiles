@@ -25,6 +25,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 == Usage
 
 * F4 for paste toggle
+* F6 for NERDTreeFind current file position in NERDtree
 * F7 for NERDTree toggle
 * F8 for taglist toggle
 * F12 for mouse toggle
@@ -32,9 +33,9 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 * \\cc for comment out
 * \\c<SPACE> for removing comment mark
 * \\ff for js file formatting
-* \\a= for tabular =
-* \\a: for tabular :
-* \\a> for tabular =>
+* \\a= for tabular fomat with =
+* \\a: for tabular fomat with :
+* \\a> for tabular fomat with =>
 * '<c-y>,' for zencoding
 * <c-e> for sparkup
 * yss- for <% -%>
