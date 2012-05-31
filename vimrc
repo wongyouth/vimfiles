@@ -1,11 +1,7 @@
-set nocompatible               " be iMproved
-filetype off                   " required!
-
-"--------------------
-" enable vundle
-"--------------------
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"------------------------------
+" Vundle and bundles config
+"------------------------------
+source ~/.vim/bundles.vim
 
 "------------------------------
 " for windows vim with ruby1.9
