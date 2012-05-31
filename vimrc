@@ -52,6 +52,17 @@ set nowrap
 set nobackup
 set noswapfile
 
+" hightlight search
+set incsearch
+set hlsearch
+
+" highlight trailing space
+if !exists('no_trailing_space_error')
+  au BufWinEnter * hi link TrailingSpace Error
+  au BufWinEnter * syn match TrailingSpace /\s\+$/ display
+endif
+
+
 "-----------------------
 " status line setting
 "-----------------------
