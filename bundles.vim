@@ -39,7 +39,7 @@ Bundle 'nvie/vim-togglemouse'
 Bundle 'mattn/zencoding-vim'
 " alternative for zencoding
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-"Bundle 'wojtekmach/vim-rename' " use NERD tree menu instead
+Bundle 'wojtekmach/vim-rename'
 
 "--------------------------
 " tool for explorer
