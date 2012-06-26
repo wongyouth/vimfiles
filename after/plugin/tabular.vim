@@ -1,9 +1,7 @@
-nmap <leader>a# :Tabularize /#<cr>
-vmap <leader>a# :Tabularize /#<cr>
-nmap <leader>a= :Tabularize /=<cr>
-vmap <leader>a= :Tabularize /=<cr>
-nmap <leader>a: :Tabularize /:\zs<cr>
-vmap <leader>a: :Tabularize /:\zs<cr>
-nmap <leader>a> :Tabularize /=><cr>
-vmap <leader>a> :Tabularize /=><cr>
-
+noremap <leader>a,  :Tabularize /,<cr>
+noremap <leader>a#  :Tabularize /#<cr>
+noremap <leader>a=  :Tabularize /=<cr>
+noremap <leader>a== :Tabularize /==<cr>
+noremap <leader>a:  :Tabularize /:/r0c0l1<cr>
+noremap <leader>a\|  :Tabularize /\|<cr>
+noremap <leader>a>  :Tabularize /=><cr>

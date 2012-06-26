@@ -1,7 +1,12 @@
+"set guifont
 set guifont=Monospace\ 11
 
-"color blackboard github solarized
-color github
+"colorscheme: blackboard github solarized
+"color solarized
+"color github
+
+"set background=dark | light
+"set background=light
 
 "----------------------------
 " Invisible character colors
@@ -15,23 +20,20 @@ color github
 " terminals doesn't see difference
 " between <tab> and <c-tab>
 "------------------------------------------------------
-map <c-tab> gt
-map <c-s-tab> gT
+noremap <c-tab> gt
+noremap <c-s-tab> gT
 "---------------------------------------------------
 " DOES NOT WORK on ubuntu gnome-termial
 " alt-[0-9] is shortcuts for terminal tab switching
 "---------------------------------------------------
-map <a-1> 1gt
-map <a-2> 2gt
-map <a-3> 3gt
-map <a-4> 4gt
-map <a-5> 5gt
-map <a-6> 6gt
-map <a-7> 7gt
-map <a-8> 8gt
-map <a-9> 9gt
-map <a-0> :tablast<cr>
-
-" ref: https://github.com/huacnlee/vimmate/blob/master/.gvimrc
-
+noremap <a-1> 1gt
+noremap <a-2> 2gt
+noremap <a-3> 3gt
+noremap <a-4> 4gt
+noremap <a-5> 5gt
+noremap <a-6> 6gt
+noremap <a-7> 7gt
+noremap <a-8> 8gt
+noremap <a-9> 9gt
+noremap <a-0> :tablast<cr>
 

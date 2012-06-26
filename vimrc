@@ -18,12 +18,6 @@ syntax on
 " colorscheme
 "--------------------
 color desert
-"color blackboard
-
-" do trick for show solarized correct
-"color solarized
-"set background=
-"set background=dark
 
 "--------------------
 " encoding
@@ -65,9 +59,8 @@ set statusline=%<%f\ %h%m%r%=[TYPE=%Y]\ [FORMAT=%{&ff}]\ [ENC=%{&enc}]\ [FENC=%{
 "set listchars=tab:▸\ ,eol:¬
 set listchars=tab:▸\ 
 set list
-" map toggle, or use F4
-nmap <leader>l :set list!<cr>
-
+" nnoremap toggle, or use F4
+nnoremap <leader>l :set list!<cr>
 
 "------------------------------------
 " highlight trailing space
@@ -84,7 +77,7 @@ endif
 " DOES NOT WORK with colorscheme solarized and blackboard
 "--------------------------------------------------------
 set cursorline
-highlight cursorline term=underline cterm=underline guibg=Grey40
+highlight cursorline term=underline cterm=underline gui=underline
 set cursorcolumn
 if has("autocmd")
   " current line
@@ -98,12 +91,14 @@ endif
 " hightlight search
 set incsearch
 set hlsearch
+nnoremap <silent> <esc><esc> :noh<cr>
 
 "------------------------
 " for quick load vimrc
 "------------------------
-map <leader>v :tabedit $MYVIMRC<cr>
-map <leader>e :tabedit $HOME/vimfiles/vimrc<cr>
+noremap <leader>v :tabedit $MYVIMRC<cr>
+noremap <leader>c :tabedit $HOME/vimfiles/vimrc<cr>
+noremap <leader>g :tabedit $HOME/vimfiles/gvimrc<cr>
 
 " filetype detection
 if has("autocmd")
@@ -114,39 +109,40 @@ if has("autocmd")
   autocmd bufnewfile,bufread *.thor set filetype=ruby
 endif
 
-"---------------------------------------------------
-" disabled for becoming really slow when reload vimrc
-" after a few changes saved
-"---------------------------------------------------
-"rerun vimrc after save it
-"if has("autocmd")
-  "autocmd bufwritepost _vimrc source $MYVIMRC
-  "autocmd bufwritepost vimrc source $MYVIMRC
-"endif
-
 "-----------------------
 " Shortcut keys mappings
 "-----------------------
+" search & replace current word under cursor
+nnoremap <F3> /<c-r><c-w><cr>
+nnoremap <M-F3> /<c-r><c-w><cr>N:%s/<c-r><c-w>//gc<left><left><left>
+" search & current selection, support new-line
+vnoremap <F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>
+vnoremap <M-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
+
 " F4 toggle for paste, Insert Mode
 set pastetoggle=<F4>
 " toggle for copy & paste, Normal Mode
 nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
 " toggle mouse with F12, for selection be copied to system clipboard
 set mouse=a
+" set windows only
+nnoremap <silent> <F11> :on<cr>
 
 "-------------------------------
 " Windows switch with Ctrl+↑↓←→ 
 "-------------------------------
-imap <silent> <C-left> <esc><C-W><left>
-vmap <silent> <C-left> <esc><C-W><left>
-nmap <silent> <C-left> <C-W><left>
-imap <silent> <C-right> <esc><C-W><right>
-vmap <silent> <C-right> <esc><C-W><right>
-nmap <silent> <C-right> <C-W><right>
-imap <silent> <C-up> <esc><C-W><up>
-vmap <silent> <C-up> <esc><C-W><up>
-nmap <silent> <C-up> <C-W><up>
-imap <silent> <C-down> <esc><C-W><down>
-vmap <silent> <C-down> <esc><C-W><down>
-nmap <silent> <C-down> <C-W><down>
+noremap <silent> <C-left> <esc><C-W><left>
+noremap <silent> <C-right> <esc><C-W><right>
+noremap <silent> <C-up> <esc><C-W><up>
+noremap <silent> <C-down> <esc><C-W><down>
+
+"----------------------------
+" Tab navigation
+"----------------------------
+noremap <silent> tf :tabfirst<cr>
+noremap <silent> tl :tablast<cr>
+noremap <silent> tp :tabprevious<cr>
+noremap <silent> tn :tabnext<cr>
+noremap te :tabedit<space>
+noremap tm :tabmove<space>
 
