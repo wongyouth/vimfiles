@@ -1,6 +1,6 @@
-A handful of plugins for vim all maintained in one bundle subdirectory, useful vim configuration, espacially for Rails coding. All plugins are included as submodules, so you can get plugins updated in one command that makes life easier.
+A handful of plugins for vim all maintained in one bundles.vim file, useful vim configuration, espacially for Rails coding. All plugins are mantained by vundle, so you can get plugins updated in one command that makes life easier.
 
-## make use you have `exuberant-ctags` installed for using vim-ctags
+Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
     sudo apt-get install exuberant-ctags
 
@@ -26,45 +26,69 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
     # install bundles
     Launch vim, run :BundleInstall (or vim +BundleInstall +qall for CLI lovers)
 
+## Features
+
+* rails.vim included
+* snipmate support included
+* Ctrl-P TextMate like file exploring
+* NERDTree
+* commenting
+* git intergrated
+* zencoding
+* ctags
+* coffe-script syntax
+* markdown syntax
+* haml syntax
+* css, scss, sass syntax
+* highlights hex codes in css files with colors the present, only work in gvim
+* many other good stuff, see vim-plugins list below
+
 ## Usage
+
+### update vim plugins
+
+* `:BundleInstall!`  - update vim plugins
 
 ### File explorer
 
-* F7 for NERDTree toggle
-* F6 for NERDTreeFind current file position in NERDtree
-* F8 for toggling taglist window
-* \<c-b> for showing BufExplorer
-* \<c-p> features like Ctrl-p in textmate
+* `<F6>`             - open current file's folder in NERDtree
+* `<F7>`             - toggle NERDTree window
+* `<F8>`             - toggle taglist window
+* `<c-b>`            - show buffer list
+* `<c-p>`            - features like Ctrl-p in textMate
+* `<F3>`             - use word under cursor as pattern to find all matching in the current file
+* `<c-F3>`           - use word under cursor as pattern to replace all matching in the current file
+* `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
 
 ### Formatting
 
-* F4 for paste toggle
-* F12 for mouse toggle
+* `<F4>`  - toggle paste mode
+* `<F12>` - toggle mouse
 
-* \\cc for commenting out code
-* \\c<SPACE> for removing comment tag
+* `\cc`       - comment out
+* `\c<SPACE>` - revert comment out
 
-* \\ff for javascript formatting
+* `\ff` - javascript formatting
 
-* \\a= for tabular format with =
-* \\a> for tabular format with =>
-* \\a== for tabular format with ==
-* \\a| for tabular format with |
+* `\a=`  - spilt and align line code by `=`
+* `\a>`  - spilt and align line code by `=>`
+* `\a==` - spilt and align line code by `==`
+* `\a|`  - spilt and align line code by `|`
+* `:Tab /pattern` for others, see `:h Tabular`
 
-* '\<c-y>,' for zencoding
-* '\<c-e>' for sparkup
+* `<c-y>,` - zencoding
+* `<c-e>`  - sparkup
 
-* yss- for <% -%>
-* yss= for <%= %>
-* ysiw" for wrap a word with ""
+* `yss-`  - for <% wor*d -%>
+* `yss=`  - for <%= wor*d %>
+* `ysiw"` - for wrap a word with `"wor*d"`, more `:h surround`
 
-* fooBar  -> foo_bar by <tt>crs</tt> (snake_case)
-* foo_bar -> FooBar  by <tt>crm</tt> (MixedCase)
-* foo_bar -> fooBar  by <tt>crc</tt> (camelCase)
-* foo_bar -> FOO_BAR by <tt>cru</tt> (UPPER_CASE)
+* `crs` (`snake_case`) - `fooBar`  -> `foo_bar`
+* `crm` (`MixedCase`)  - `foo_bar` -> `FooBar`
+* `crc` (`camelCase`)  - `foo_bar` -> `fooBar`
+* `cru` (`UPPER_CASE`) - `foo_bar` -> `FOO_BAR`, more on `:h cr`
 
-* refer to plugin's document for more help
-
+* `\P` - preview markdown, textile text turns to html output in browser, need `ruby` built in Vim, `bluecloth`, `RedCloth` and other gems installed in system environemnt (not in rvm or rbenv env) for support converting. more `:h preview`
 
 ## Vim plugins included in the submodules
 
@@ -72,7 +96,7 @@ A handful of plugins for vim all maintained in one bundle subdirectory, useful v
 
 ## Vim plugins included in bundles
 
-### Plugins from tpope(http://github.com/tpope)
+### Plugins from [tpope](http://github.com/tpope)
 * [*fugitive*](https://github.com/tpope/vim-fugitive) a Git wrapper so awesome, it should be illegal
 
 * [*rails*](https://github.com/tpope/vim-rails) Ruby on Rails power tools, offers wonderful features for Ruby on Rails application development.
