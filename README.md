@@ -177,7 +177,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*vim-github-colorscheme*](https://github.com/endel/vim-github-colorscheme) A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
 
-### Screenshot
+## Screenshots
 
 * vim-terminal
 
