@@ -176,3 +176,13 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*solarized*](https://github.com/altercation/vim-colors-solarized) precision colorscheme for the vim text editor
 
 * [*vim-github-colorscheme*](https://github.com/endel/vim-github-colorscheme) A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
+
+### Screenshot
+
+* vim-terminal
+
+  <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2KSe7/26ZeB.png' width='800' height='600'>
+
+* vim-gui
+
+  <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2LdP9/Ap3ld.png' width='800' height='600'>

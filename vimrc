@@ -77,7 +77,7 @@ endif
 " DOES NOT WORK with colorscheme solarized and blackboard
 "--------------------------------------------------------
 set cursorline
-highlight cursorline term=underline cterm=underline gui=underline
+highlight cursorline term=underline cterm=NONE ctermbg=0 gui=NONE guibg=Grey40
 set cursorcolumn
 if has("autocmd")
   " current line
