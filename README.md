@@ -56,6 +56,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * `<F6>`             - open current file's folder in NERDtree
 * `<F7>`             - toggle NERDTree window
 * `<F8>`             - toggle tagbar window
+* `<F11>`            - exeucte `:only` to make current window maximized
 * `<c-b>`            - show buffer list
 * `<c-p>`            - features like Ctrl-p in textMate
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
@@ -178,3 +179,18 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*solarized*](https://github.com/altercation/vim-colors-solarized) precision colorscheme for the vim text editor
 
 * [*vim-github-colorscheme*](https://github.com/endel/vim-github-colorscheme) A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
+
+## Screenshots
+
+* vim-gui
+
+  <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2LdP9/Ap3ld.png' width='800' height='600' alt="vim-gui" />
+
+* vim-gui (with dropdown menu for snippets)
+
+  <img src="http://pic.yupoo.com/sinaweibo1332356097/C5CzkQbO/828LY.png" width='800' height='600' alt="vim-gui-snippets" />
+
+* vim-terminal
+
+  <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2KSe7/26ZeB.png' width='800' height='600' alt="vim-terminal" />
+

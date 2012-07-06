@@ -78,7 +78,7 @@ endif
 "--------------------------------------------------------
 set cursorline
 set cursorcolumn
-highlight cursorline term=underline cterm=none ctermbg=0
+highlight cursorline term=underline cterm=NONE ctermbg=0 gui=NONE guibg=Grey40
 if has("autocmd")
   " current line
   au WinLeave * set nocursorline
