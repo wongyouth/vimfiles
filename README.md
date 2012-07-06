@@ -32,16 +32,18 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * snipmate support included
 * Ctrl-P TextMate like file exploring
 * NERDTree
-* commenting
+* NERDCommenter
 * git intergrated
 * zencoding
 * ctags
+* tagbar
 * coffe-script syntax
 * markdown syntax
 * haml syntax
 * css, scss, sass syntax
-* highlights hex codes in css files with colors the present, only work in gvim
+* highlights hex codes in css files with colors they present, only work in gvim
 * many other good stuff, see vim-plugins list below
+* cursorline highlight & cursorcolumn hightlight
 
 ## Usage
 
@@ -53,11 +55,11 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * `<F6>`             - open current file's folder in NERDtree
 * `<F7>`             - toggle NERDTree window
-* `<F8>`             - toggle taglist window
+* `<F8>`             - toggle tagbar window
 * `<c-b>`            - show buffer list
 * `<c-p>`            - features like Ctrl-p in textMate
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
-* `<c-F3>`           - use word under cursor as pattern to replace all matching in the current file
+* `<alt-F3>`           - use word under cursor as pattern to replace all matching in the current file
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
 
 ### Formatting
@@ -136,7 +138,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 ### File explorer
 
-* [*taglist.vim*](https://github.com/vim-scripts/taglist.vim.git) Source code browser (supports C/C++, java, perl, python, tcl, sql, php, etc)
+* [*tagbar*](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.
 
 * [*ctags.vim*](https://github.com/vim-scripts/ctags.vim) Display function name in the title bar.
 
@@ -165,9 +167,9 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*snipmate-snippets*](https://github.com/honza/snipmate-snippets) vim-snipmate default snippets
 
-* [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically
+* [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it.
 
-* [tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM
+* [tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM. snipmate needs it.
 
 ### Color scheme
 

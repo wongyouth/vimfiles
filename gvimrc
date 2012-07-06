@@ -8,6 +8,18 @@ set guifont=Monospace\ 11
 "set background=dark | light
 "set background=light
 
+highlight cursorline gui=none guibg=grey40
+set cursorline
+set cursorcolumn
+if has("autocmd")
+  " current line
+  au WinLeave * set nocursorline
+  au WinEnter * set cursorline
+  " current column
+  au WinLeave * set nocursorcolumn
+  au WinEnter * set cursorcolumn
+endif
+
 "----------------------------
 " Invisible character colors
 "----------------------------

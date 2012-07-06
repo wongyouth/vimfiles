@@ -40,7 +40,7 @@ set hidden
 set wildmenu
 
 " do not wrap line
-set nowrap
+"set nowrap
 
 " do not create backup, swap file, use git for version managment
 set nobackup
@@ -65,7 +65,7 @@ nnoremap <leader>l :set list!<cr>
 "------------------------------------
 " highlight trailing space
 "------------------------------------
-" comment out line below to unhighlight trailing space
+" comment out lines below to unhighlight trailing space
 "let no_trailing_space_error = 1
 if !exists('no_trailing_space_error')
   au BufWinEnter * hi link TrailingSpace Error
@@ -77,8 +77,8 @@ endif
 " DOES NOT WORK with colorscheme solarized and blackboard
 "--------------------------------------------------------
 set cursorline
-highlight cursorline term=underline cterm=underline gui=underline
 set cursorcolumn
+highlight cursorline term=underline cterm=none ctermbg=0
 if has("autocmd")
   " current line
   au WinLeave * set nocursorline
