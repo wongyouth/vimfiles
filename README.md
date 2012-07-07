@@ -38,7 +38,6 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * ctags
 * tagbar
 * coffe-script syntax
-* markdown syntax
 * haml syntax
 * css, scss, sass syntax
 * highlights hex codes in css files with colors they present, only work in gvim
@@ -136,6 +135,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*preview*](https://github.com/greyblake/vim-preview) previewing markup files(markdown,rdoc,textile,html)
 
 * [*rename*](https://github.com/wojtekmach/vim-rename) Rename a buffer within Vim and on disk. :Rename[!] newname
+* [loremipsum](htpps://github.com/vim-scripts/loremipsum) A dummy text generator. :Loremipsum[!] [WORDCOUNT] [PARAGRAPH_TEMPLATE] [PREFIX POSTFIX]
 
 ### File explorer
 
@@ -153,8 +153,6 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 ### Filetype syntax highlight
 
 * [*less*](https://github.com/groenewege/vim-less) vim syntax for LESS (dynamic CSS)
-
-* [*vim-markdown*](https://github.com/plasticboy/vim-markdown) Markdown Vim Mode
 
 * [*vim-rdoc*](https://github.com/depuracao/vim-rdoc) Rdoc Vim Mode
 
@@ -179,6 +177,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*solarized*](https://github.com/altercation/vim-colors-solarized) precision colorscheme for the vim text editor
 
 * [*vim-github-colorscheme*](https://github.com/endel/vim-github-colorscheme) A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
+* [*monokai*](https://github.com/rickharris/vim-monokai) Monokai for vim.
 
 ## Screenshots
 

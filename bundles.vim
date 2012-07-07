@@ -57,7 +57,8 @@ Bundle 'vim-scripts/ctags.vim'
 "--------------------------
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
-Bundle 'plasticboy/vim-markdown'
+" use builtin markdown support (vim 7.3)
+"Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
 Bundle 'mamut/vim-css-hex'
 
@@ -67,6 +68,7 @@ Bundle 'mamut/vim-css-hex'
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'endel/vim-github-colorscheme'
+Bundle 'rickharris/vim-monokai'
 
 "--------------------------
 " snipmate

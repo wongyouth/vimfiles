@@ -33,7 +33,7 @@ set autoindent
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " This means that you can have unwritten changes to a file and open a new file
-" using :e, without being forced to write or undo your changes first. 
+" using :e, without being forced to write or undo your changes first.
 set hidden
 
 " show command menu, work great with snapmate-snippets
@@ -61,6 +61,8 @@ set listchars=tab:▸\
 set list
 " nnoremap toggle, or use F4
 nnoremap <leader>l :set list!<cr>
+" trim trailing whitespace
+nnoremap <leader>W :%s/\s\+$//c<cr>
 
 "------------------------------------
 " highlight trailing space
@@ -129,7 +131,7 @@ set mouse=a
 nnoremap <silent> <F11> :on<cr>
 
 "-------------------------------
-" Windows switch with Ctrl+↑↓←→ 
+" Windows switch with Ctrl+↑↓←→
 "-------------------------------
 noremap <silent> <C-left> <esc><C-W><left>
 noremap <silent> <C-right> <esc><C-W><right>
@@ -146,3 +148,7 @@ noremap <silent> tn :tabnext<cr>
 noremap te :tabedit<space>
 noremap tm :tabmove<space>
 
+"----------------------------
+" Abbreviation
+"----------------------------
+inoreabbr lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
