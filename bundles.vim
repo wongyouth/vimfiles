@@ -1,3 +1,9 @@
+"------------------------------------------------------------
+" when in Mac osx vi, if filetype is already off,
+" calling filetype off causes a bad exit status
+"------------------------------------------------------------
+filetype on
+"------------------------------------------------------------
 set nocompatible               " be iMproved
 filetype off                   " required!
 
