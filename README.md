@@ -56,7 +56,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * `<F7>`             - toggle NERDTree window
 * `<F8>`             - toggle tagbar window
 * `<F11>`            - exeucte `:only` to make current window maximized
-* `<c-b>`            - show buffer list
+* `<c-k>`            - show buffer list
 * `<c-p>`            - features like Ctrl-p in textMate
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
 * `<alt-F3>`           - use word under cursor as pattern to replace all matching in the current file

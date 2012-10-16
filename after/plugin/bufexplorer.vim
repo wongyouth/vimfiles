@@ -1,3 +1,3 @@
-imap <silent> <C-b> <esc>:BufExplorer<CR>
-nmap <silent> <C-b> :BufExplorer<CR>
+imap <silent> <C-k> <esc>:BufExplorer<CR>
+nmap <silent> <C-k> :BufExplorer<CR>
 

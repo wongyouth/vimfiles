@@ -23,7 +23,7 @@ color desert
 " encoding
 "--------------------
 set fencs=utf-8,cp936,sjis
-"set enc=utf-8
+set enc=utf-8
 
 "--------------------
 " normal setting
@@ -108,7 +108,7 @@ if has("autocmd")
   autocmd bufnewfile,bufread *.rxls set filetype=ruby
 
   " set thor filetype to ruby
-  autocmd bufnewfile,bufread *.thor set filetype=ruby
+  autocmd bufnewfile,bufread *.thor,*.ru,Gemfile,Gemfile.lock set filetype=ruby
 endif
 
 "-----------------------
