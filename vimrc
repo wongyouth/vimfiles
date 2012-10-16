@@ -23,7 +23,7 @@ color desert
 " encoding
 "--------------------
 set fencs=utf-8,cp936,sjis
-"set enc=utf-8
+set enc=utf-8
 
 "--------------------
 " normal setting
@@ -99,7 +99,7 @@ nnoremap <silent> <esc><esc> :noh<cr>
 " for quick load vimrc
 "------------------------
 noremap <leader>v :tabedit $MYVIMRC<cr>
-noremap <leader>c :tabedit $HOME/vimfiles/vimrc<cr>
+noremap <leader>e :tabedit $HOME/vimfiles/vimrc<cr>
 noremap <leader>g :tabedit $HOME/vimfiles/gvimrc<cr>
 
 " filetype detection
@@ -108,7 +108,7 @@ if has("autocmd")
   autocmd bufnewfile,bufread *.rxls set filetype=ruby
 
   " set thor filetype to ruby
-  autocmd bufnewfile,bufread *.thor set filetype=ruby
+  autocmd bufnewfile,bufread *.thor,Gemfile,Gemfile.lock set filetype=ruby
 endif
 
 "-----------------------
@@ -152,3 +152,4 @@ noremap tm :tabmove<space>
 " Abbreviation
 "----------------------------
 inoreabbr lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+inoreabbr bd binding.pry
