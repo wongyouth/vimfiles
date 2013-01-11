@@ -1,5 +1,11 @@
 "set guifont
-set guifont=Monospace\ 11
+if has("gui_macvim")
+  "for mac
+  set guifont=Monaco:h13
+else
+  "for ubuntu
+  set guifont=Monospace\ 11
+endif
 
 "colorscheme: blackboard github solarized
 "color solarized

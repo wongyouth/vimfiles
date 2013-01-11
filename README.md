@@ -137,6 +137,9 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*rename*](https://github.com/wojtekmach/vim-rename) Rename a buffer within Vim and on disk. :Rename[!] newname
 * [loremipsum](htpps://github.com/vim-scripts/loremipsum) A dummy text generator. :Loremipsum[!] [WORDCOUNT] [PARAGRAPH_TEMPLATE] [PREFIX POSTFIX]
 
+* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion) Vim motions on speed!
+* [BufOnly](https://github.com/vim-scripts/BufOnly.vim) Delete all the buffers except the current/named buffer
+
 ### File explorer
 
 * [*tagbar*](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.

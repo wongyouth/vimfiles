@@ -47,6 +47,7 @@ Bundle 'mattn/zencoding-vim'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'wojtekmach/vim-rename'
 Bundle 'vim-scripts/loremipsum'
+Bundle 'Lokaltog/vim-easymotion'
 
 "--------------------------
 " tool for explorer
@@ -57,6 +58,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ctags.vim'
 "Bundle 'mileszs/ack.vim'
+Bundle 'vim-scripts/BufOnly.vim'
 
 "--------------------------
 " filetype syntax highlight
