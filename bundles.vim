@@ -48,6 +48,11 @@ Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'wojtekmach/vim-rename'
 Bundle 'vim-scripts/loremipsum'
 Bundle 'Lokaltog/vim-easymotion'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'lucapette/vim-ruby-doc'
+Bundle 'lucapette/vim-jquery-doc'
+Bundle 'scrooloose/syntastic'
+"Bundle 'wincent/Command-T'
 
 "--------------------------
 " tool for explorer

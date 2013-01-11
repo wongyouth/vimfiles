@@ -43,6 +43,9 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * highlights hex codes in css files with colors they present, only work in gvim
 * many other good stuff, see vim-plugins list below
 * cursorline highlight & cursorcolumn hightlight
+* ruby syntax check
+* Browse Ruby Spec Rails API doc quickly with Vim
+* Browse jQuery API doc quickly with Vim
 
 ## Usage
 
@@ -61,6 +64,19 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
 * `<alt-F3>`           - use word under cursor as pattern to replace all matching in the current file
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
+
+### doc explorer
+
+* RB - for ruby method api
+* RS - for rspec method api
+* RR - for rails method api
+* JJ - for Jquery method api
+
+### ruby syntax check
+
+* :w !ruby -c
+* syntax check once ruby file saved
+* :Error - open prefix window for syntax error
 
 ### Formatting
 
@@ -135,10 +151,20 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * [*preview*](https://github.com/greyblake/vim-preview) previewing markup files(markdown,rdoc,textile,html)
 
 * [*rename*](https://github.com/wojtekmach/vim-rename) Rename a buffer within Vim and on disk. :Rename[!] newname
-* [loremipsum](htpps://github.com/vim-scripts/loremipsum) A dummy text generator. :Loremipsum[!] [WORDCOUNT] [PARAGRAPH_TEMPLATE] [PREFIX POSTFIX]
 
-* [vim-easymotion](https://github.com/Lokaltog/vim-easymotion) Vim motions on speed!
-* [BufOnly](https://github.com/vim-scripts/BufOnly.vim) Delete all the buffers except the current/named buffer
+* [*loremipsum*](htpps://github.com/vim-scripts/loremipsum) A dummy text generator. :Loremipsum[!] [WORDCOUNT] [PARAGRAPH_TEMPLATE] [PREFIX POSTFIX]
+
+* [*vim*-easymotion](https://github.com/Lokaltog/vim-easymotion) Vim motions on speed!
+
+* [*BufOnly*](https://github.com/vim-scripts/BufOnly.vim) Delete all the buffers except the current/named buffer
+
+* [*vim-ruby*](https://github.com/vim-ruby/vim-ruby) Vim/Ruby Configuration Files
+
+* [*vim-ruby-doc*](https://github.com/lucapette/vim-ruby-doc) Browse Ruby RSpec and Rails API docs quickly with Vim
+
+* [*vim-jquery-doc*](https://github.com/lucapette/vim-jquery-doc) Browse jQuery API doc quickly with Vim
+
+* [*syntastic*](https://github.com/scrooloose/syntastic) Syntax checking hacks for vim
 
 ### File explorer
 
