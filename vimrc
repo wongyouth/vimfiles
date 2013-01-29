@@ -116,10 +116,10 @@ endif
 "-----------------------
 " search & replace current word under cursor
 nnoremap <F3> /<c-r><c-w><cr>
-nnoremap <M-F3> /<c-r><c-w><cr>N:%s/<c-r><c-w>//gc<left><left><left>
+nnoremap <C-F3> /<c-r><c-w><cr>N:%s/<c-r><c-w>//gc<left><left><left>
 " search & current selection, support new-line
 vnoremap <F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>
-vnoremap <M-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
+vnoremap <C-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
 
 " F4 toggle for paste, Insert Mode
 set pastetoggle=<F4>
@@ -186,6 +186,7 @@ noremap <silent> tl :tablast<cr>
 noremap <silent> tp :tabprevious<cr>
 noremap <silent> tn :tabnext<cr>
 noremap <silent> tc :tabclose<cr>
+noremap <silent> ts :tab split<cr>
 noremap te :tabedit<space>
 noremap tm :tabmove<space>
 

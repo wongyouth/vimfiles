@@ -53,6 +53,7 @@ Bundle 'lucapette/vim-ruby-doc'
 Bundle 'lucapette/vim-jquery-doc'
 Bundle 'scrooloose/syntastic'
 "Bundle 'wincent/Command-T'
+Bundle 'sjl/gundo.vim'
 
 "--------------------------
 " tool for explorer
@@ -62,7 +63,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ctags.vim'
-"Bundle 'mileszs/ack.vim'
+Bundle 'mileszs/ack.vim'
 Bundle 'vim-scripts/BufOnly.vim'
 
 "--------------------------
@@ -74,6 +75,7 @@ Bundle 'kchmck/vim-coffee-script'
 "Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
 Bundle 'mamut/vim-css-hex'
+Bundle 'nono/vim-handlebars'
 
 "--------------------------
 " color scheme

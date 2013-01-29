@@ -38,6 +38,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * ctags
 * tagbar
 * coffe-script syntax
+* handlebars syntax
 * haml syntax
 * css, scss, sass syntax
 * highlights hex codes in css files with colors they present, only work in gvim
@@ -46,6 +47,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * ruby syntax check
 * Browse Ruby Spec Rails API doc quickly with Vim
 * Browse jQuery API doc quickly with Vim
+* Ack: an lternative for `grep` way pattern search, Ubuntu user should run `sudo apt-get install ack-grep`.
 
 ## Usage
 
@@ -55,6 +57,8 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 ### File explorer
 
+* `<F4>`             - line number showing toggle
+* `<F5>`             - undo history toggle
 * `<F6>`             - open current file's folder in NERDtree
 * `<F7>`             - toggle NERDTree window
 * `<F8>`             - toggle tagbar window
@@ -62,7 +66,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * `<c-k>`            - show buffer list
 * `<c-p>`            - features like Ctrl-p in textMate
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
-* `<alt-F3>`           - use word under cursor as pattern to replace all matching in the current file
+* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
 
 ### doc explorer
@@ -166,6 +170,12 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*syntastic*](https://github.com/scrooloose/syntastic) Syntax checking hacks for vim
 
+* [*gundo*](https://github.com/sjl/gundo.vim) Vim plugin to visualize your Vim undo tree
+
+* [*Ack](https://github.com/mileszs/ack.vim) Vim plugin for the Perl module / CLI script 'ack'
+
+* [*vim-handlebars*](https://github.com/nono/vim-handlebars) Vim plugin for Handlebars
+
 ### File explorer
 
 * [*tagbar*](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.
@@ -221,4 +231,13 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * vim-terminal
 
   <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2KSe7/26ZeB.png' width='800' height='600' alt="vim-terminal" />
+
+
+## changelog
+
+[2013-01-29]
+
+* add ack.vim
+* add vim-handlebars
+* support macvim for tab navigation with 'Command-[0-9]'
 
