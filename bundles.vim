@@ -54,6 +54,7 @@ Bundle 'lucapette/vim-jquery-doc'
 Bundle 'scrooloose/syntastic'
 "Bundle 'wincent/Command-T'
 Bundle 'sjl/gundo.vim'
+Bundle 'slim-template/vim-slim'
 
 "--------------------------
 " tool for explorer

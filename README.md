@@ -85,6 +85,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 ### Formatting
 
 * `<F4>`  - toggle paste mode
+* `<F5>`  - toggle Gundo window (history window)
 * `<F12>` - toggle mouse
 
 * `\cc`       - comment out
@@ -172,9 +173,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*gundo*](https://github.com/sjl/gundo.vim) Vim plugin to visualize your Vim undo tree
 
-* [*Ack](https://github.com/mileszs/ack.vim) Vim plugin for the Perl module / CLI script 'ack'
-
-* [*vim-handlebars*](https://github.com/nono/vim-handlebars) Vim plugin for Handlebars
+* [*Ack*](https://github.com/mileszs/ack.vim) Vim plugin for the Perl module / CLI script 'ack'
 
 ### File explorer
 
@@ -195,9 +194,13 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*vim-rdoc*](https://github.com/depuracao/vim-rdoc) Rdoc Vim Mode
 
-* [coffee-script](https://github.com/kchmck/vim-coffee-script) CoffeeScript support for vim
+* [*coffee-script*](https://github.com/kchmck/vim-coffee-script) CoffeeScript support for vim
 
 * [*vim-css-hex*](https://github.com/mamut/vim-css-hex) Highlights hex codes in css files with colors they represent
+
+* [*vim-handlebars*](https://github.com/nono/vim-handlebars) Vim plugin for Handlebars
+
+* [*vim-slim*](https://github.com/slim-template/vim-slim) A clone of the slim vim plugin from stonean. For use with Pathogen.
 
 ### Code Snippets
 
@@ -234,6 +237,10 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 
 ## changelog
+
+[2013-02-02]
+
+* add a new filetype: vim-slim
 
 [2013-01-29]
 
