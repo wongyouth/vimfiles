@@ -1,2 +1,2 @@
-autocmd BufNewFile,BufRead *.hbs set filetype=handlebars
+autocmd BufNewFile,BufRead *.handlebars,*.hbs set filetype=handlebars
 
