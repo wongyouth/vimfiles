@@ -57,7 +57,9 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 ### File explorer
 
-* `<F4>`             - line number showing toggle
+* `<F3>`             - use word under cursor as pattern to find all matching in the current file
+* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file
+* `<F4>`             - line number showing toggle (normal mode)
 * `<F5>`             - undo history toggle
 * `<F6>`             - open current file's folder in NERDtree
 * `<F7>`             - toggle NERDTree window
@@ -65,8 +67,6 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * `<F11>`            - exeucte `:only` to make current window maximized
 * `<c-k>`            - show buffer list
 * `<c-p>`            - features like Ctrl-p in textMate
-* `<F3>`             - use word under cursor as pattern to find all matching in the current file
-* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
 
 ### doc explorer
@@ -84,12 +84,12 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 ### Formatting
 
-* `<F4>`  - toggle paste mode
+* `<F4>`  - toggle paste mode (insert mode)
 * `<F5>`  - toggle Gundo window (history window)
-* `<F12>` - toggle mouse
+* `<F12>` - toggle mouse (for terminal vim)
 
 * `\cc`       - comment out
-* `\c<SPACE>` - revert comment out
+* `\c<SPACE>` - reverting comment out
 
 * `\ff` - javascript formatting
 
