@@ -206,7 +206,7 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 
 * [*snipmate*](https://github.com/garbas/vim-snipmate) snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim
 
-* [*snipmate-snippets*](https://github.com/honza/snipmate-snippets) vim-snipmate default snippets
+* [*vim-snippets*](https://github.com/honza/vim-snippets) vim-snipmate default snippets
 
 * [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it.
 
@@ -234,17 +234,4 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * vim-terminal
 
   <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2KSe7/26ZeB.png' width='800' height='600' alt="vim-terminal" />
-
-
-## changelog
-
-[2013-02-02]
-
-* add a new filetype: vim-slim
-
-[2013-01-29]
-
-* add ack.vim
-* add vim-handlebars
-* support macvim for tab navigation with 'Command-[0-9]'
 
