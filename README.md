@@ -1,8 +1,12 @@
 A handful of plugins for vim all maintained in one bundles.vim file, useful vim configuration, espacially for Rails coding. All plugins are mantained by vundle, so you can get plugins updated in one command that makes life easier.
 
-Make sure you have `exuberant-ctags` installed for using vim-ctags.
+Make sure you have `exuberant-ctags` installed for using vim-ctags if you use Ubuntu.
 
     sudo apt-get install exuberant-ctags
+
+or if you use Mac
+
+    brew install ctags
 
 ## One Line Installation:
 
@@ -33,21 +37,22 @@ Make sure you have `exuberant-ctags` installed for using vim-ctags.
 * Ctrl-P TextMate like file exploring
 * NERDTree
 * NERDCommenter
-* git intergrated
+* git integrated
 * zencoding
 * ctags
 * tagbar
 * coffe-script syntax
 * handlebars syntax
 * haml syntax
+* slim syntax
 * css, scss, sass syntax
-* highlights hex codes in css files with colors they present, only work in gvim
-* many other good stuff, see vim-plugins list below
+* highlights hex codes in css files with colors they present (only work in GVIM)
 * cursorline highlight & cursorcolumn hightlight
 * ruby syntax check
 * Browse Ruby Spec Rails API doc quickly with Vim
 * Browse jQuery API doc quickly with Vim
 * Ack: an lternative for `grep` way pattern search, Ubuntu user should run `sudo apt-get install ack-grep`.
+* many other good stuff, see vim-plugins list below
 
 ## Usage
 

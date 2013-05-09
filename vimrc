@@ -13,6 +13,8 @@ source ~/.vim/bundles.vim
 "----------------------------
 filetype plugin indent on
 syntax on
+set foldmethod=syntax
+set foldlevel=1
 
 "--------------------
 " colorscheme
@@ -45,6 +47,11 @@ set wildmenu
 " do not create backup, swap file, use git for version managment
 set nobackup
 set noswapfile
+
+if has('mac')
+  " make unnamed register the same as * register
+  set clipboard=unnamed
+endif
 
 "-----------------------
 " status line setting
@@ -109,6 +116,9 @@ if has("autocmd")
 
   " set thor filetype to ruby
   autocmd bufnewfile,bufread *.thor,*.ru,Gemfile,Gemfile.lock set filetype=ruby
+
+  " set god filetype to ruby
+  autocmd bufnewfile,bufread *.god set filetype=ruby
 endif
 
 "-----------------------
@@ -117,9 +127,11 @@ endif
 " search & replace current word under cursor
 nnoremap <F3> /<c-r><c-w><cr>
 nnoremap <C-F3> /<c-r><c-w><cr>N:%s/<c-r><c-w>//gc<left><left><left>
+nnoremap <D-F3> /<c-r><c-w><cr>N:%s/<c-r><c-w>//gc<left><left><left>
 " search & current selection, support new-line
 vnoremap <F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>
 vnoremap <C-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
+vnoremap <D-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
 
 " F4 toggle for paste, Insert Mode
 set pastetoggle=<F4>
@@ -159,6 +171,10 @@ nmap <silent> <leader>ul :t.<CR>Vr=
 
 " set text wrapping toggles
 nmap <silent> <leader>tw :set invwrap<CR>:set wrap?<CR>
+
+" use tjump instead of tag
+nnoremap <C-]> g<C-]>
+vnoremap <C-]> g<C-]>
 
 " Map the arrow keys to be based on display lines, not physical lines
 map <Down> gj
