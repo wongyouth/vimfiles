@@ -1,7 +1,13 @@
 
 ## changelog
 
-[2013-04-08]
+[2013-05-09]
+
+* add ruby filetype to support .god
+* set clipboard=unnamed in mac
+* use <C-]> instead of g<C-]>
+
+[2013-04-07]
 
 * add `CHANGELOG` file
 * change `honza/snipmate-snippets` to `honza/vim-snippets`
