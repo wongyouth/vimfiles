@@ -63,7 +63,7 @@ or if you use Mac
 ### File explorer
 
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
-* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file, or `<D-F3>` if in Mac
+* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file, `<D-F3>` for Mac
 * `<F4>`             - line number showing toggle (normal mode)
 * `<F5>`             - undo history toggle
 * `<F6>`             - open current file's folder in NERDtree
@@ -76,10 +76,14 @@ or if you use Mac
 
 ### doc explorer
 
-* RB - for ruby method api
-* RS - for rspec method api
-* RR - for rails method api
-* JJ - for Jquery method api
+* `RB` - for ruby method api
+* `RS` - for rspec method api
+* `RR` - for rails method api
+* `JJ` - for Jquery method api
+
+### work with sudo
+
+* run `vim sudo:/etc/hosts`, otherwise a warning will show about `unite` is disalbed.
 
 ### ruby syntax check
 
@@ -186,15 +190,17 @@ or if you use Mac
 
 * [nerdtree](https://github.com/scrooloose/nerdtree.git) A tree explorer plugin for vim
 
-* <del datetime="2013-05-22T22:29:52 +0800">[bufexplorer](https://github.com/corntrace/bufexplorer) With bufexplorer, you can quickly and easily switch between buffers</del>
+* <del datetime="2013-05-22T22:29:52 +0800"> [bufexplorer](https://github.com/corntrace/bufexplorer) With bufexplorer, you can quickly and easily switch between buffers</del>
 
-* <del datetime="2013-05-22T22:29:38 +0800">[buffergrator](https://github.com/jeetsukumaran/vim-buffergator) Vim plugin to list, select and switch between buffers.</del>
+* <del datetime="2013-05-22T22:29:38 +0800"> [buffergrator](https://github.com/jeetsukumaran/vim-buffergator) Vim plugin to list, select and switch between buffers.</del>
 
 * [ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru and tag finder
 
 * [unite](http://github.com/Shougo/unite.vim) Unite and create user interfaces
 
 * [unite-outline](http://github.com/Shougo/unite-outline) outline source for unite.vim
+
+* [sudo.vim](http://github.com/vim-scripts/sudo.vim) Allows one to edit a file with prevledges from an unprivledged session.
 
 ### Filetype syntax highlight
 
@@ -218,11 +224,11 @@ or if you use Mac
 
 * [vim-snippets](https://github.com/wongyouth/vim-snippets) vim-snipmate default snippets
 
-* <del datetime="2013-05-22T22:24:21 +0800">[snipmate](https://github.com/garbas/vim-snipmate) snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim </del>
+* <del datetime="2013-05-22T22:24:21 +0800"> [snipmate](https://github.com/garbas/vim-snipmate) snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim </del>
 
-* <del datetime="2013-05-22T22:26:08 +0800">[vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it</del>.
+* <del datetime="2013-05-22T22:26:08 +0800"> [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it. </del>
 
-* <del datetime="2013-05-22T22:26:17 +0800">[tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM. snipmate needs it.</del>
+* <del datetime="2013-05-22T22:26:17 +0800"> [tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM. snipmate needs it. </del>
 
 ### Color scheme
 

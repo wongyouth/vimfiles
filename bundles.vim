@@ -54,6 +54,7 @@ Bundle 'scrooloose/syntastic'
 "Bundle 'wincent/Command-T'
 Bundle 'sjl/gundo.vim'
 Bundle 'slim-template/vim-slim'
+Bundle 'vim-scripts/sudo.vim'
 
 "--------------------------
 " tool for explorer
