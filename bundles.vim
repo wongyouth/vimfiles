@@ -45,7 +45,6 @@ Bundle 'nvie/vim-togglemouse'
 Bundle 'mattn/zencoding-vim'
 " alternative for zencoding
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'wojtekmach/vim-rename'
 Bundle 'vim-scripts/loremipsum'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-ruby/vim-ruby'
@@ -59,7 +58,10 @@ Bundle 'slim-template/vim-slim'
 "--------------------------
 " tool for explorer
 "--------------------------
-Bundle 'corntrace/bufexplorer'
+Bundle 'Shougo/unite.vim'
+Bundle 'Shougo/unite-outline'
+"Bundle 'corntrace/bufexplorer'
+"Bundle 'jeetsukumaran/vim-buffergator'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
@@ -84,12 +86,14 @@ Bundle 'nono/vim-handlebars'
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'endel/vim-github-colorscheme'
-Bundle 'rickharris/vim-monokai'
 
 "--------------------------
 " snipmate
 "--------------------------
-Bundle 'garbas/vim-snipmate'
-Bundle 'honza/vim-snippets'
-Bundle 'tomtom/tlib_vim'
-Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'garbas/vim-snipmate' "replaced with neoshippet
+"Bundle 'tomtom/tlib_vim'
+"Bundle 'MarcWeber/vim-addon-mw-utils'
+"Bundle 'honza/vim-snippets'
+Bundle 'Shougo/neocomplcache.vim'
+Bundle 'Shougo/neosnippet.vim'
+Bundle 'wongyouth/vim-snippets'

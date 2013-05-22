@@ -3,6 +3,9 @@
 "------------------------------
 source ~/.vim/bundles.vim
 
+" must set in vimrc
+let g:neocomplcache_enable_at_startup = 1
+
 "------------------------------
 " for windows vim with ruby1.9
 "------------------------------
@@ -20,6 +23,9 @@ set foldlevel=1
 " colorscheme
 "--------------------
 color desert
+
+"let g:solarized_termtrans = 1
+"color solarized
 
 "--------------------
 " encoding

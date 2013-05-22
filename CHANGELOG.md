@@ -1,5 +1,13 @@
-
 ## changelog
+
+[2013-05-22]
+
+* add unite, unite-outline vim
+* add neocomplcache.vim
+* replace vim-snipmate with neosnippet.vim
+* replace bufexplorer, buffergator with unite
+* remove rename.vim, use NERDTree
+* use forked wongyouth/vim-snippets
 
 [2013-05-09]
 
