@@ -22,6 +22,10 @@ if !exists('g:tagbar_width')
   vmap <F8> <ESC>:Unite outline<CR>
 endif
 
+imap \o <ESC>:Unite outline<CR>
+nmap \o <ESC>:Unite outline<CR>
+vmap \o <ESC>:Unite outline<CR>
+
 if !exists('g:did_buffergator')
   imap <leader>b <ESC>:Unite buffer<CR>
   nmap <leader>b <ESC>:Unite buffer<CR>

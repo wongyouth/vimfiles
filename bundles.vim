@@ -31,6 +31,7 @@ Bundle 'tpope/vim-speeddating'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
 
 "--------------------------
 " utility
@@ -55,6 +56,8 @@ Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'vim-scripts/sudo.vim'
+" statusline
+Bundle 'bling/vim-airline'
 
 "--------------------------
 " tool for explorer

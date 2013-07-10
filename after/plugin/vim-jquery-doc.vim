@@ -1,3 +1,3 @@
-if has("gui_macvim")
+if has('mac')
   let g:jquery_doc_command='open'
 endif

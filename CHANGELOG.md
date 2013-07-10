@@ -1,5 +1,9 @@
 ## changelog
 
+[2013-07-10]
+
+* add vim-airline
+
 [2013-05-22]
 
 * add unite, unite-outline vim
@@ -8,6 +12,7 @@
 * replace bufexplorer, buffergator with unite
 * remove rename.vim, use NERDTree
 * use forked wongyouth/vim-snippets
+* add sudo.vim
 
 [2013-05-09]
 

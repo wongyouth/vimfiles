@@ -190,9 +190,9 @@ or if you use Mac
 
 * [nerdtree](https://github.com/scrooloose/nerdtree.git) A tree explorer plugin for vim
 
-* <del datetime="2013-05-22T22:29:52 +0800"> [bufexplorer](https://github.com/corntrace/bufexplorer) With bufexplorer, you can quickly and easily switch between buffers</del>
+* <del datetime="2013-05-22T22:29:52 +0800">[bufexplorer](https://github.com/corntrace/bufexplorer) With bufexplorer, you can quickly and easily switch between buffers</del>.
 
-* <del datetime="2013-05-22T22:29:38 +0800"> [buffergrator](https://github.com/jeetsukumaran/vim-buffergator) Vim plugin to list, select and switch between buffers.</del>
+* <del datetime="2013-05-22T22:29:38 +0800">[buffergrator](https://github.com/jeetsukumaran/vim-buffergator) Vim plugin to list, select and switch between buffers</del>.
 
 * [ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru and tag finder
 
@@ -201,6 +201,8 @@ or if you use Mac
 * [unite-outline](http://github.com/Shougo/unite-outline) outline source for unite.vim
 
 * [sudo.vim](http://github.com/vim-scripts/sudo.vim) Allows one to edit a file with prevledges from an unprivledged session.
+
+* [vim-airline](http://github.com/bling/vim-airline) lean & mean statusline for vim that's light as air
 
 ### Filetype syntax highlight
 
@@ -224,11 +226,11 @@ or if you use Mac
 
 * [vim-snippets](https://github.com/wongyouth/vim-snippets) vim-snipmate default snippets
 
-* <del datetime="2013-05-22T22:24:21 +0800"> [snipmate](https://github.com/garbas/vim-snipmate) snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim </del>
+* <del datetime="2013-05-22T22:24:21 +0800">[snipmate](https://github.com/garbas/vim-snipmate) snipMate.vim aims to be a concise vim script that implements some of TextMate's snippets features in Vim</del>.
 
-* <del datetime="2013-05-22T22:26:08 +0800"> [vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it. </del>
+* <del datetime="2013-05-22T22:26:08 +0800">[vim-addon-mw-utils](https://github.com/MarcWeber/vim-addon-mw-utils) vim: interpret a file by function and cache file automatically. snipmate needs it </del>.
 
-* <del datetime="2013-05-22T22:26:17 +0800"> [tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM. snipmate needs it. </del>
+* <del datetime="2013-05-22T22:26:17 +0800">[tlib](https://github.com/tomtom/tlib_vim) Some utility functions for VIM. snipmate needs it</del>.
 
 ### Color scheme
 
