@@ -43,9 +43,9 @@ Bundle 'vim-scripts/jsbeautify'
 Bundle 'vim-scripts/The-NERD-Commenter'
 Bundle 'godlygeek/tabular'
 Bundle 'nvie/vim-togglemouse'
-Bundle 'mattn/zencoding-vim'
-" alternative for zencoding
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+" successor of zencoding
+Bundle 'mattn/emmet-vim'
+"Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'vim-scripts/loremipsum'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'vim-ruby/vim-ruby'
@@ -56,8 +56,10 @@ Bundle 'scrooloose/syntastic'
 Bundle 'sjl/gundo.vim'
 Bundle 'slim-template/vim-slim'
 Bundle 'vim-scripts/sudo.vim'
+Bundle 'vim-scripts/BufOnly.vim'
 " statusline
 Bundle 'bling/vim-airline'
+Bundle 'nathanaelkane/vim-indent-guides'
 
 "--------------------------
 " tool for explorer
@@ -71,7 +73,6 @@ Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/ctags.vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'vim-scripts/BufOnly.vim'
 
 "--------------------------
 " filetype syntax highlight

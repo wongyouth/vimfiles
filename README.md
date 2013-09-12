@@ -38,7 +38,7 @@ or if you use Mac
 * NERDTree
 * NERDCommenter
 * git integrated
-* zencoding
+* emmet
 * ctags
 * tagbar
 * coffe-script syntax
@@ -156,9 +156,7 @@ or if you use Mac
 
 * [tabular](https://github.com/godlygeek/tabular) Vim script for text filtering and alignment
 
-* [zencoding](https://github.com/mattn/zencoding-vim) vim script support for expanding abbreviation like zen-coding.
-
-* [sparkup](https://github.com/rstacruz/sparkup) A parser for a condensed HTML format
+* [emmet](https://github.com/mattn/emmet-vim) emmet for vim: http://emmet.io/
 
 * [jsbeautify](https://github.com/vim-scripts/jsbeautify) a javascript source code formatter. <leader>ff
 
@@ -181,6 +179,8 @@ or if you use Mac
 * [gundo](https://github.com/sjl/gundo.vim) Vim plugin to visualize your Vim undo tree
 
 * [Ack](https://github.com/mileszs/ack.vim) Vim plugin for the Perl module / CLI script 'ack'
+
+* [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) A Vim plugin for visually displaying indent levels in code
 
 ### File explorer
 

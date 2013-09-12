@@ -1,2 +1,2 @@
-autocmd BufNewFile,BufRead *.slimbars set filetype=slim
+autocmd BufNewFile,BufRead *.slim,*.slimbars set filetype=slim
 

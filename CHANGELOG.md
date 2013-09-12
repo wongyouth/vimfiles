@@ -1,5 +1,10 @@
 ## changelog
 
+[2013-09-12]
+
+* use emmet instead of zencoding
+* add vim-indent-guides
+
 [2013-07-10]
 
 * add vim-airline
