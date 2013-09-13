@@ -84,6 +84,7 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'depuracao/vim-rdoc'
 Bundle 'mamut/vim-css-hex'
 Bundle 'nono/vim-handlebars'
+Bundle 'vim-scripts/AnsiEsc.vim'
 
 "--------------------------
 " color scheme

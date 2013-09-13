@@ -218,6 +218,8 @@ or if you use Mac
 
 * [vim-slim](https://github.com/slim-template/vim-slim) A clone of the slim vim plugin from stonean. For use with Pathogen.
 
+* [AnsiEsc](https://github.com/vim-scripts/AnsiEsc.vim) ansi escape sequences concealed, but highlighted as specified (conceal)
+
 ### Code Snippets
 
 * [neocomplcache.vim](http://github.com/Shougo/neocomplcache.vim) Ultimate auto-completion system for Vim.
