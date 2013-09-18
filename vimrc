@@ -3,6 +3,8 @@
 "------------------------------
 source ~/.vim/bundles.vim
 
+" zsh not do correct path setting in OSX
+set shell=/bin/bash
 " must set in vimrc
 let g:neocomplcache_enable_at_startup = 1
 
