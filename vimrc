@@ -114,9 +114,9 @@ nnoremap <silent> <esc><esc> :noh<cr>
 "------------------------
 " for quick load vimrc
 "------------------------
-noremap <leader>v :tabedit $MYVIMRC<cr>
-noremap <leader>e :tabedit $HOME/vimfiles/vimrc<cr>
-noremap <leader>g :tabedit $HOME/vimfiles/gvimrc<cr>
+noremap <leader>vc :tabedit $MYVIMRC<cr>
+noremap <leader>ve :tabedit $HOME/vimfiles/vimrc<cr>
+noremap <leader>vg :tabedit $HOME/vimfiles/gvimrc<cr>
 
 " filetype detection
 if has("autocmd")
@@ -214,6 +214,22 @@ noremap <silent> tc :tabclose<cr>
 noremap <silent> ts :tab split<cr>
 noremap te :tabedit<space>
 noremap tm :tabmove<space>
+
+
+"---------------------------
+" Rails map
+"---------------------------
+nnoremap <silent> rdm :Rake db:migrate<cr>
+nnoremap <silent> rds :Rake db:seed<cr>
+
+"---------------------------
+" Git map
+"---------------------------
+nnoremap <leader>gs :Gstatus<CR>
+nnoremap <leader>gd :Gdiff<CR>
+nnoremap <leader>gi :Git<CR>
+nnoremap <leader>gb :Gblame<CR>
+nnoremap <leader>ge :Gedit<CR>
 
 "----------------------------
 " Abbreviation
