@@ -143,6 +143,7 @@ or if you use Mac
 
 * [repeat](https://github.com/tpope/vim-repeat) enable repeating supported plugin maps with "."
 
+* [vim-haml](https://github.com/tpope/vim-haml) Vim runtime files for Haml, Sass, and SCSS
 
 ### Utility
 
@@ -212,7 +213,7 @@ or if you use Mac
 
 * [coffee-script](https://github.com/kchmck/vim-coffee-script) CoffeeScript support for vim
 
-* [vim-css-hex](https://github.com/mamut/vim-css-hex) Highlights hex codes in css files with colors they represent
+* [vim-css-color](https://github.com/skammer/vim-css-color) Highlight colors in css files
 
 * [vim-handlebars](https://github.com/nono/vim-handlebars) Vim plugin for Handlebars
 

@@ -1,5 +1,13 @@
 ## changelog
 
+[2013-10-09]
+
+vim-css-hex does not show hex color in css file correctly and seems not being under development since 2 years ago, I decided to switch to vim-css-color.
+
+* add vim-haml
+* add vim-css-color
+* delete vim-css-hex
+
 [2013-09-13]
 
 * add AnsiEsc

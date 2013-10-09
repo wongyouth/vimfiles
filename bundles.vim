@@ -60,6 +60,7 @@ Bundle 'vim-scripts/BufOnly.vim'
 " statusline
 Bundle 'bling/vim-airline'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'airblade/vim-gitgutter'
 
 "--------------------------
 " tool for explorer
@@ -82,7 +83,9 @@ Bundle 'kchmck/vim-coffee-script'
 " use builtin markdown support (vim 7.3)
 "Bundle 'plasticboy/vim-markdown'
 Bundle 'depuracao/vim-rdoc'
-Bundle 'mamut/vim-css-hex'
+Bundle 'tpope/vim-haml'
+"Bundle 'mamut/vim-css-hex'
+Bundle 'skammer/vim-css-color'
 Bundle 'nono/vim-handlebars'
 Bundle 'vim-scripts/AnsiEsc.vim'
 
