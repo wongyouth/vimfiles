@@ -1,5 +1,9 @@
 ## changelog
 
+[2013-10-12]
+
+add equalprg setting in vimrc for css,js,html formatting supported by external tool js-beautify.
+
 [2013-10-09]
 
 vim-css-hex does not show hex color in css file correctly and seems not being under development since 2 years ago, I decided to switch to vim-css-color.

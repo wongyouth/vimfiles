@@ -53,6 +53,7 @@ or if you use Mac
 * Browse jQuery API doc quickly with Vim
 * Ack: an lternative for `grep` way pattern search, Ubuntu user should run `sudo apt-get install ack-grep`.
 * many other good stuff, see vim-plugins list below
+* html,css,js formatting with js-beautify. You need to install [js-beautify](https://github.com/einars/js-beautify).
 
 ## Usage
 
@@ -101,6 +102,7 @@ or if you use Mac
 * `\c<SPACE>` - reverting comment out
 
 * `\ff` - javascript formatting
+* `{visual}=` - css,js,html formatting if have js-beautify installed.
 
 * `\a=`  - spilt and align line code by `=`
 * `\a>`  - spilt and align line code by `=>`
