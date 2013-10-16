@@ -95,6 +95,7 @@ Bundle 'vim-scripts/AnsiEsc.vim'
 Bundle 'rickharris/vim-blackboard'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'endel/vim-github-colorscheme'
+Bundle 'rickharris/vim-monokai'
 
 "--------------------------
 " snipmate
