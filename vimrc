@@ -57,8 +57,7 @@ set nobackup
 set noswapfile
 
 if has('mac')
-  " make unnamed register the same as * register
-  set clipboard=unnamed
+  source $HOME/vimfiles/mvimrc
 endif
 
 "-----------------------
@@ -96,7 +95,8 @@ endif
 "--------------------------------------------------------
 set cursorline
 set cursorcolumn
-highlight cursorline term=underline cterm=underline ctermbg=0 gui=NONE guibg=Grey40
+highlight cursorline term=underline cterm=underline ctermbg=0 gui=underline guibg=NONE guisp=grey40
+highlight cursorcolumn guibg=grey25
 if has("autocmd")
   " current line
   au WinLeave * set nocursorline

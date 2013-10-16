@@ -1,0 +1,11 @@
+" make unnamed register the same as * register
+set clipboard=unnamed
+
+if &term =~ 'xterm'
+  "set t_Co=16
+  set term=xterm-16color
+  hi cursorcolumn ctermbg=8
+else
+  hi cursorcolumn cterm=reverse
+endif
+

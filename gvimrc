@@ -17,17 +17,17 @@ endif
 " known issues: when NERDTree opened, sometimes cursorline not work.
 " as a workaround, uncomment lines below
 "-----------------------------------------------------
-highlight cursorline gui=none guibg=grey40
-set cursorline
-set cursorcolumn
-if has("autocmd")
-  " current line
-  au WinLeave * set nocursorline
-  au WinEnter * set cursorline
-  " current column
-  au WinLeave * set nocursorcolumn
-  au WinEnter * set cursorcolumn
-endif
+"highlight cursorline gui=none guibg=grey40
+"set cursorline
+"set cursorcolumn
+"if has("autocmd")
+"  " current line
+"  au WinLeave * set nocursorline
+"  au WinEnter * set cursorline
+"  " current column
+"  au WinLeave * set nocursorcolumn
+"  au WinEnter * set cursorcolumn
+"endif
 
 "----------------------------
 " Invisible character colors
