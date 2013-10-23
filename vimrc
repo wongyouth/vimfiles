@@ -98,13 +98,11 @@ set cursorcolumn
 highlight cursorline term=underline cterm=underline ctermbg=0 gui=underline guibg=NONE guisp=grey40
 highlight cursorcolumn guibg=grey25
 if has("autocmd")
-  " current line
-  au WinLeave * set nocursorline
-  au WinEnter * set cursorline
-  " current column
-  au WinLeave * set nocursorcolumn
-  au WinEnter * set cursorcolumn
+  "au WinEnter * set cursorline cursorcolumn
+  au BufEnter * set cursorline cursorcolumn
 endif
+
+nnoremap <silent> <leader>cur :set cursorline! cursorcolumn!<cr>
 
 " hightlight search
 set incsearch
@@ -117,6 +115,7 @@ nnoremap <silent> <esc><esc> :noh<cr>
 noremap <leader>vc :tabedit $MYVIMRC<cr>
 noremap <leader>ve :tabedit $HOME/vimfiles/vimrc<cr>
 noremap <leader>vg :tabedit $HOME/vimfiles/gvimrc<cr>
+noremap <leader>vm :tabedit $HOME/vimfiles/mvimrc<cr>
 
 " filetype detection
 if has("autocmd")

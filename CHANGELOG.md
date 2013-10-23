@@ -1,5 +1,10 @@
 ## changelog
 
+[2013-10-23]
+
+add mvimrc file for MacVim configuration
+use monokai colorscheme for gui by default.
+
 [2013-10-12]
 
 add equalprg setting in vimrc for css,js,html formatting supported by external tool js-beautify.

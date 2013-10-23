@@ -9,3 +9,8 @@ else
   hi cursorcolumn cterm=reverse
 endif
 
+if has('gui_running')
+  colo monokai
+  hi cursorline gui=underline guibg=NONE guisp=grey40
+  hi cursorcolumn guibg=grey25
+endif
