@@ -1,4 +1,4 @@
-A handful of plugins for vim all maintained in one bundles.vim file, useful vim configuration, espacially for Rails coding. All plugins are mantained by vundle, so you can get plugins updated in one command that makes life easier.
+A handful of plugins for vim all maintained in one bundles.vim file, useful vim configuration, espacially for Rails coding. All plugins are mantained by NeoBundle, so you can get plugins updated in one command that makes life easier.
 
 Make sure you have `exuberant-ctags` installed for using vim-ctags if you use Ubuntu.
 Vim plugin to list, select and switch between buffers. 
@@ -22,20 +22,20 @@ or if you use Mac
     echo "source ~/.vim/vimrc" > ~/.vimrc
     echo "source ~/.vim/gvimrc" > ~/.gvimrc
 
-    # Switch to the `~/.vim` directory, and fetch submodules
+    # Switch to the `~/.vim` directory, and install NeoBundle
     cd ~/.vim
-    git submodule init
-    git submodule update
+    mkdir -p ~/.vim/bundle
+    git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 
     # install bundles
-    Launch vim, run :BundleInstall (or vim +BundleInstall +qall for CLI lovers)
+    Launch vim, you will be prompted to install bundles.
 
 ## Features
 
 * rails.vim included
 * snipmate support included
 * Ctrl-P TextMate like file exploring
-* NERDTree
+* Unite file explorer instead of -NERDTree-
 * NERDCommenter
 * git integrated
 * emmet
@@ -59,7 +59,7 @@ or if you use Mac
 
 ### update vim plugins
 
-* `:BundleInstall!`  - update vim plugins
+* `:NeoBundleInstall!`  - update vim plugins
 
 ### File explorer
 
@@ -108,7 +108,7 @@ or if you use Mac
 * `\a>`  - spilt and align line code by `=>`
 * `\a==` - spilt and align line code by `==`
 * `\a|`  - spilt and align line code by `|`
-* `:Tab /pattern` for others, see `:h Tabular`
+* `:Tab /{pattern}` for others, see `:h Tabular`
 
 * `<c-y>,` - zencoding
 * `<c-e>`  - sparkup
@@ -123,10 +123,6 @@ or if you use Mac
 * `cru` (`UPPER_CASE`) - `foo_bar` -> `FOO_BAR`, more on `:h cr`
 
 * `\P` - preview markdown, textile text turns to html output in browser, need `ruby` built in Vim, `bluecloth`, `RedCloth` and other gems installed in system environemnt (not in rvm or rbenv env) for support converting. more `:h preview`
-
-## Vim plugins included in the submodules
-
-* [vundle](https://github.com/gmarik/vundle) Vundle, the plug-in manager for Vim
 
 ## Vim plugins included in bundles
 
@@ -185,9 +181,17 @@ or if you use Mac
 
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) A Vim plugin for visually displaying indent levels in code
 
+## <del datetime="2013-11-14 12:59:48">Vim plugins included in the submodules</del>
+
+* <del datetime="2013-11-14 12:59:48">[vundle](https://github.com/gmarik/vundle) Vundle, the plug-in manager for Vim</del>
+
 ### File explorer
 
-* [tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.
+* [unite](http://github.com/Shougo/unite.vim) Unite and create user interfaces
+
+* [unite-outline](http://github.com/Shougo/unite-outline) outline source for unite.vim
+
+* <del datetime="2013-11-14 12:59:48">[tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.</del>
 
 * [ctags](https://github.com/vim-scripts/ctags.vim) Display function name in the title bar.
 
@@ -197,11 +201,7 @@ or if you use Mac
 
 * <del datetime="2013-05-22T22:29:38 +0800">[buffergrator](https://github.com/jeetsukumaran/vim-buffergator) Vim plugin to list, select and switch between buffers</del>.
 
-* [ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru and tag finder
-
-* [unite](http://github.com/Shougo/unite.vim) Unite and create user interfaces
-
-* [unite-outline](http://github.com/Shougo/unite-outline) outline source for unite.vim
+* <del datetime="2013-11-14 12:59:48">[ctrlp](https://github.com/kien/ctrlp.vim) Fuzzy file, buffer, mru and tag finder</del>
 
 * [sudo.vim](http://github.com/vim-scripts/sudo.vim) Allows one to edit a file with prevledges from an unprivledged session.
 
@@ -261,3 +261,6 @@ or if you use Mac
 
   <img src='http://pic.yupoo.com/sinaweibo1332356097/C5k2KSe7/26ZeB.png' width='800' height='600' alt="vim-terminal" />
 
+## Change log
+
+[full change log](CHANGELOG.md)

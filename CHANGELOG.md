@@ -1,4 +1,12 @@
-## changelog
+## Change log
+
+[2013-11-14 13:10:07]
+
+* remove `Vundle` in favor of `NeoBundle` which can build vimproc automatically.
+* remove `NERDTree` in favor of Unite-file
+* remove `Ctrlp` in favor of Unite-file_rec
+* remove `BufExplorer` in favor of Unite-buffer
+* add `vimproc` for Unite-file_rec/async
 
 [2013-10-23]
 

@@ -1,7 +1,13 @@
 "------------------------------
 " Vundle and bundles config
 "------------------------------
-source ~/.vim/bundles.vim
+"source ~/.vim/bundles.vim
+
+" Use neobundle to automatically build vimproc
+"------------------------------
+" NeoBundle and bundles config
+"------------------------------
+source ~/.vim/neobundles.vim
 
 " zsh not do correct path setting in OSX
 set shell=/bin/bash
@@ -18,8 +24,8 @@ let g:neocomplcache_enable_at_startup = 1
 "----------------------------
 filetype plugin indent on
 syntax on
-set foldmethod=syntax
-set foldlevel=1
+"set foldmethod=syntax
+"set foldlevel=1
 
 "--------------------
 " colorscheme
@@ -235,6 +241,8 @@ nnoremap <leader>ge :Gedit<CR>
 "----------------------------
 inoreabbr lorem Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 inoreabbr bd binding.pry
+
+inoreabbr <expr> dts strftime("%F %T")
 
 "----------------------------
 " Filter
