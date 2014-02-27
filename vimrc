@@ -56,7 +56,7 @@ set hidden
 set wildmenu
 
 " do not wrap line
-"set nowrap
+set nowrap
 
 " do not create backup, swap file, use git for version managment
 set nobackup
@@ -250,3 +250,7 @@ inoreabbr <expr> dts strftime("%F %T")
 autocmd filetype html setlocal equalprg=html-beautify\ -f\ -\ -s\ 2
 autocmd filetype css setlocal equalprg=css-beautify\ -f\ -\ -s\ 2
 autocmd filetype js setlocal equalprg=js-beautify\ -f\ -\ -s\ 2
+
+if filereadable(expand("~/.vimrc.after"))
+  source ~/.vimrc.after
+endif

@@ -53,7 +53,7 @@ NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
 NeoBundle 'lucapette/vim-ruby-doc'
 NeoBundle 'lucapette/vim-jquery-doc'
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'wincent/Command-T'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
@@ -68,10 +68,11 @@ NeoBundle 'airblade/vim-gitgutter'
 " tool for explorer
 "--------------------------
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neomru.vim'
 NeoBundle 'Shougo/unite-outline'
 "NeoBundle 'corntrace/bufexplorer'
 "NeoBundle 'jeetsukumaran/vim-buffergator'
-"NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/nerdtree'
 "NeoBundle 'kien/ctrlp.vim'
 NeoBundle 'vim-scripts/ctags.vim'
 NeoBundle 'majutsushi/tagbar'
@@ -109,6 +110,11 @@ NeoBundle 'rickharris/vim-monokai'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'wongyouth/vim-snippets'
+
+"-------------------------"
+" Vimim for chinese input
+"-------------------------"
+NeoBundle 'vimim/vimim'
 
 filetype plugin indent on     " Required!
 "

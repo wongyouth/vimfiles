@@ -1,7 +1,7 @@
 A handful of plugins for vim all maintained in one bundles.vim file, useful vim configuration, espacially for Rails coding. All plugins are mantained by NeoBundle, so you can get plugins updated in one command that makes life easier.
 
 Make sure you have `exuberant-ctags` installed for using vim-ctags if you use Ubuntu.
-Vim plugin to list, select and switch between buffers. 
+Vim plugin to list, select and switch between buffers.
     sudo apt-get install exuberant-ctags
 
 or if you use Mac
@@ -30,30 +30,44 @@ or if you use Mac
     # install bundles
     Launch vim, you will be prompted to install bundles.
 
+## Base Customization
+
+* Line number
+* Soft 2-space tabs, and default hard tabs to 2 spaces
+* Show trailing whitespace in color red
+* Allow backspacing over everything (indentations, eol, and start characters) in insert mode
+* Always show statusline
+* `<leader>u` converts the entire word to uppercace
+* `<leader>l` converts the entire word to lowercase
+* `<leader>U` converts the first char of a word to uppercase
+* `<leader>L` converts the first char of a word to lowercase
+
+If ~/.vim.after exists it will be loaded at the very ending, you can write your own customization there.
+
 ## Features
 
 * rails.vim included
-* snipmate support included
+* Snippets support included
 * Ctrl-P TextMate like file exploring
-* Unite file explorer instead of -NERDTree-
+* (Unite)[https://github.com/Shougo/unite.vim] integrated, loading files asynchronously make loading faster in large project.
 * NERDCommenter
-* git integrated
-* emmet
-* ctags
-* tagbar
-* coffe-script syntax
-* handlebars syntax
-* haml syntax
-* slim syntax
+* Git integrated
+* Emmet (formerly Zen Coding)
+* Ctags
+* Tagbar
+* Coffee-script syntax
+* Handlebars syntax
+* Haml syntax
+* Slim syntax
 * css, scss, sass syntax
-* highlights hex codes in css files with colors they present (only work in GVIM)
-* cursorline highlight & cursorcolumn hightlight
-* ruby syntax check
+* Highlights hex codes in css files with colors they present (only work in Vim GUI)
+* Cursorline highlight & cursorcolumn hightlight
 * Browse Ruby Spec Rails API doc quickly with Vim
 * Browse jQuery API doc quickly with Vim
 * Ack: an lternative for `grep` way pattern search, Ubuntu user should run `sudo apt-get install ack-grep`.
-* many other good stuff, see vim-plugins list below
 * html,css,js formatting with js-beautify. You need to install [js-beautify](https://github.com/einars/js-beautify).
+
+Many other good stuff, see vim-plugins list below
 
 ## Usage
 
@@ -64,31 +78,34 @@ or if you use Mac
 ### File explorer
 
 * `<F3>`             - use word under cursor as pattern to find all matching in the current file
-* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file, `<D-F3>` for Mac
-* `<F4>`             - line number showing toggle (normal mode)
-* `<F5>`             - undo history toggle
-* `<F6>`             - open current file's folder in NERDtree
+* `<C-F3>`           - use word under cursor as pattern to replace all matching in the current file, `<M-F3>` for Mac
+* `<F4>`             - toggle line number in normal mode, toggle paste mode in insert mode
+* `<F5>`             - toggle undo history
+* `<F6>`             - open current buffer's folder in NERDtree
 * `<F7>`             - toggle NERDTree window
 * `<F8>`             - toggle tagbar window
 * `<F11>`            - exeucte `:only` to make current window maximized
 * `<C-k>`            - show buffer list
-* `<C-p>`            - features like Ctrl-p in textMate
+* `<C-p>`            - fuzzy matching, features like Ctrl-p in textMate
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
+* `:Ack <pattern> <directory>` - for searching pattern in all files under a directory
+* `<leader>o`        - Show current buffer's outline
+* `<leader>b`        - Fuzzy matching files under current buffer directory
+* `<leader>d`        - Fuzzy matching files under current buffer directory and all subdirectories(async)
 
-### doc explorer
+### API document explorering
 
-* `RB` - for ruby method api
-* `RS` - for rspec method api
-* `RR` - for rails method api
-* `JJ` - for Jquery method api
+* `RB` - go to Ruby api page with current word under cursor
+* `RS` - go to Rspec api page with current word under cursor
+* `RR` - go to Rails api page with current word under cursor
+* `JJ` - go to jQuery api page with current word under cursor
 
-### work with sudo
+### Work with sudo
 
-* run `vim sudo:/etc/hosts`, otherwise a warning will show about `unite` is disalbed.
+* run `vim sudo:/etc/hosts`, otherwise a warning will show about `unite` is disabled.
 
 ### ruby syntax check
 
-* :w !ruby -c
 * syntax check once ruby file saved
 * :Error - open prefix window for syntax error
 
@@ -110,12 +127,12 @@ or if you use Mac
 * `\a|`  - spilt and align line code by `|`
 * `:Tab /{pattern}` for others, see `:h Tabular`
 
-* `<c-y>,` - zencoding
+* `<c-y>,` - (Emmet)[https://github.com/emmetio/emmet] (formerly Zen Coding)
 * `<c-e>`  - sparkup
 
-* `yss-`  - for <% wor*d -%>
-* `yss=`  - for <%= wor*d %>
-* `ysiw"` - for wrap a word with `"wor*d"`, more `:h surround`
+* `ysiw"` - Wrap a word with double quotation, `wor*d` => `"wor*d"`, more `:h surround`
+* `yss-`  - `wor*d` => `<% wor*d -%>`
+* `yss=`  - `wor*d` => `<%= wor*d %>`
 
 * `crs` (`snake_case`) - `fooBar`  -> `foo_bar`
 * `crm` (`MixedCase`)  - `foo_bar` -> `FooBar`
@@ -191,7 +208,7 @@ or if you use Mac
 
 * [unite-outline](http://github.com/Shougo/unite-outline) outline source for unite.vim
 
-* <del datetime="2013-11-14 12:59:48">[tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.</del>
+* [tagbar](https://github.com/majutsushi/tagbar) Vim plugin that displays tags in a window, ordered by class etc.</del>
 
 * [ctags](https://github.com/vim-scripts/ctags.vim) Display function name in the title bar.
 

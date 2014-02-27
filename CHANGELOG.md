@@ -1,12 +1,18 @@
 ## Change log
 
+[2014-02-28 24:06:01]
+
+* Add back `NERDTree`
+* disable `scrooloose/syntastic` since it cause saving file very slowly.
+* Change README
+
 [2013-11-14 13:10:07]
 
-* remove `Vundle` in favor of `NeoBundle` which can build vimproc automatically.
-* remove `NERDTree` in favor of Unite-file
-* remove `Ctrlp` in favor of Unite-file_rec
-* remove `BufExplorer` in favor of Unite-buffer
-* add `vimproc` for Unite-file_rec/async
+* Remove `Vundle` in favor of `NeoBundle` which can build vimproc automatically.
+* Remove `NERDTree` in favor of Unite-file
+* Remove `Ctrlp` in favor of Unite-file_rec
+* Remove `BufExplorer` in favor of Unite-buffer
+* Add `vimproc` for Unite-file_rec/async
 
 [2013-10-23]
 

@@ -4,12 +4,12 @@ endif
 
 
 if !exists('g:loaded_nerd_tree')
-  nnoremap <F6> :<C-u>UniteWithBufferDir file<CR>
+  nnoremap <F6> :<C-u>UniteWithBufferDir file_rec/async<CR><C-u>
   nnoremap <F7> :<C-u>Unite file_rec/async<CR>
 endif
 
 if !exists('g:loaded_ctrlp')
-  nnoremap <C-p> :<C-u>Unite file_rec buffer file_mru<CR>
+  nnoremap <C-p> :<C-u>Unite file_rec/async buffer file_mru<CR>
 endif
 
 if !exists('g:tagbar_width')
@@ -20,14 +20,18 @@ if !exists('g:bufexplorer_version')
   nnoremap <C-k> :<C-u>Unite buffer<CR>
 endif
 
-nnoremap <silent> <leader>b :<C-u>UniteWithBufferDir buffer file_mru bookmark file<CR>
-nnoremap <silent> <leader>d :<C-u>UniteWithBufferDir file<CR>
+call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
+
+nnoremap <silent> <leader>b :<C-u>UniteWithBufferDir -buffer-name=files file<CR><C-u>
+nnoremap <silent> <leader>d :<C-u>UniteWithBufferDir -buffer-name=files file_rec/async<CR><C-u>
 nnoremap <silent> <leader>f :<C-u>Unite file<CR>
 nnoremap <silent> <leader>g :<C-u>Unite grep:.<CR>
 nnoremap <silent> <leader>m :<C-u>Unite file_mru<CR>
 nnoremap <silent> <leader>ma :<C-u>Unite mapping<CR>
 nnoremap <silent> <leader>me :<C-u>Unite output:message<CR>
-nnoremap <silent> <leader>r :<C-u>Unite register<CR>
+nnoremap <silent> <leader>r :<C-u>Unite -buffer-name=resume resume<CR>
+nnoremap <silent> <leader>re :<C-u>Unite register<CR>
 nnoremap <silent> <leader>o :<C-u>Unite outline<CR>
 nnoremap <silent> <leader>t :<C-u>Unite file_rec<CR>
 
