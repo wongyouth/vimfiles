@@ -49,7 +49,7 @@ If ~/.vim.after exists it will be loaded at the very ending, you can write your 
 * rails.vim included
 * Snippets support included
 * Ctrl-P TextMate like file exploring
-* (Unite)[https://github.com/Shougo/unite.vim] integrated, loading files asynchronously make loading faster in large project.
+* [Unite](https://github.com/Shougo/unite.vim) integrated, loading files asynchronously make loading faster in large project.
 * NERDCommenter
 * Git integrated
 * Emmet (formerly Zen Coding)
@@ -127,7 +127,7 @@ Many other good stuff, see vim-plugins list below
 * `\a|`  - spilt and align line code by `|`
 * `:Tab /{pattern}` for others, see `:h Tabular`
 
-* `<c-y>,` - (Emmet)[https://github.com/emmetio/emmet] (formerly Zen Coding)
+* `<c-y>,` - [Emmet](https://github.com/emmetio/emmet) (formerly Zen Coding)
 * `<c-e>`  - sparkup
 
 * `ysiw"` - Wrap a word with double quotation, `wor*d` => `"wor*d"`, more `:h surround`
