@@ -91,6 +91,7 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'skammer/vim-css-color'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
+NeoBundle 'heartsentwined/vim-emblem'
 
 "--------------------------
 " color scheme

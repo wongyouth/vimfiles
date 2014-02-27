@@ -23,8 +23,8 @@ endif
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
 
-nnoremap <silent> <leader>b :<C-u>UniteWithBufferDir -buffer-name=files file<CR><C-u>
-nnoremap <silent> <leader>d :<C-u>UniteWithBufferDir -buffer-name=files file_rec/async<CR><C-u>
+nnoremap <silent> <leader>b :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> <leader>d :<C-u>UniteWithBufferDir -buffer-name=files file_rec/async<CR>
 nnoremap <silent> <leader>f :<C-u>Unite file<CR>
 nnoremap <silent> <leader>g :<C-u>Unite grep:.<CR>
 nnoremap <silent> <leader>m :<C-u>Unite file_mru<CR>
@@ -97,3 +97,6 @@ function! s:unite_my_settings()
   imap <silent><buffer><expr> <C-s>     unite#do_action('split')
 endfunction
 
+" Quit unite when press ESC 2 times
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> q
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>q
