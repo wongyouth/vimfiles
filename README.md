@@ -240,6 +240,8 @@ Many other good stuff, see vim-plugins list below
 
 * [AnsiEsc](https://github.com/vim-scripts/AnsiEsc.vim) ansi escape sequences concealed, but highlighted as specified (conceal)
 
+* [vim-emblem](https://github.com/heartsentwined/vim-emblem) emblem support to vim
+
 ### Code Snippets
 
 * [neocomplcache.vim](http://github.com/Shougo/neocomplcache.vim) Ultimate auto-completion system for Vim.

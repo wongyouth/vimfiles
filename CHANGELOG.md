@@ -5,6 +5,7 @@
 * Add back `NERDTree`
 * disable `scrooloose/syntastic` since it cause saving file very slowly.
 * Change README
+* Add vim-emblem
 
 [2013-11-14 13:10:07]
 
