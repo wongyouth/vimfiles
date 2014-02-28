@@ -86,12 +86,17 @@ Many other good stuff, see vim-plugins list below
 * `<F8>`             - toggle tagbar window
 * `<F11>`            - exeucte `:only` to make current window maximized
 * `<C-k>`            - show buffer list
-* `<C-p>`            - fuzzy matching, features like Ctrl-p in textMate
+* `<C-p>`            - fuzzy matching, features like Ctrl-p in textMate, from source files, buffer, mru
 * `:Ggrep <pattern>` - for searching pattern in all files under git managed, `]q` open next matching, `[q` open previous matching, `[Q`, `]Q` for the first and last matching
 * `:Ack <pattern> <directory>` - for searching pattern in all files under a directory
-* `<leader>o`        - Show current buffer's outline
-* `<leader>b`        - Fuzzy matching files under current buffer directory
-* `<leader>d`        - Fuzzy matching files under current buffer directory and all subdirectories(async)
+* `<leader>ub`       - Show buffer list
+* `<leader>uf`       - Show file list under current directory
+* `<leader>ufr`      - Show file list under current directory and subdirectories, loading asynchronously.
+* `<leader>ufm`      - Show file MRU list
+* `<leader>ubf`      - Fuzzy matching files under current buffer directory
+* `<leader>uo`       - Show current buffer's outline
+* `<leader>un`       - Rotate to next source
+* `<leader>up`       - Rotate to previous source
 
 ### API document explorering
 

@@ -23,17 +23,22 @@ endif
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
 
-nnoremap <silent> <leader>b :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
-nnoremap <silent> <leader>d :<C-u>UniteWithBufferDir -buffer-name=files file_rec/async<CR>
-nnoremap <silent> <leader>f :<C-u>Unite file<CR>
-nnoremap <silent> <leader>g :<C-u>Unite grep:.<CR>
-nnoremap <silent> <leader>m :<C-u>Unite file_mru<CR>
-nnoremap <silent> <leader>ma :<C-u>Unite mapping<CR>
-nnoremap <silent> <leader>me :<C-u>Unite output:message<CR>
-nnoremap <silent> <leader>r :<C-u>Unite -buffer-name=resume resume<CR>
-nnoremap <silent> <leader>re :<C-u>Unite register<CR>
-nnoremap <silent> <leader>o :<C-u>Unite outline<CR>
-nnoremap <silent> <leader>t :<C-u>Unite file_rec<CR>
+nnoremap <silent> <leader>uf :<C-u>Unite file<CR>
+nnoremap <silent> <leader>ufr :<C-u>Unite file_rec<CR>
+nnoremap <silent> <leader>ufm :<C-u>Unite file_mru<CR>
+nnoremap <silent> <leader>ub :<C-u>Unite buffer<CR>
+nnoremap <silent> <leader>ubm :<C-u>Unite bookmark<CR>
+nnoremap <silent> <leader>ubf :<C-u>UniteWithBufferDir -buffer-name=files file<CR>
+nnoremap <silent> <leader>ubfr :<C-u>UniteWithBufferDir -buffer-name=files file_rec/async<CR>
+nnoremap <silent> <leader>ug :<C-u>Unite grep:.<CR>
+nnoremap <silent> <leader>um :<C-u>Unite mapping<CR>
+nnoremap <silent> <leader>uom :<C-u>Unite output:message<CR>
+nnoremap <silent> <leader>ur :<C-u>Unite -buffer-name=resume resume<CR>
+nnoremap <silent> <leader>ure :<C-u>Unite register<CR>
+nnoremap <silent> <leader>uo :<C-u>Unite outline<CR>
+
+nnoremap <silent> <leader>un <Plug>(unite_rotate_next_source)
+nnoremap <silent> <leader>up <Plug>(unite_rotate_previous_source)
 
 let g:unite_source_history_yank_enable = 1
 nnoremap <leader>y :<C-u>Unite history/yank<CR>
