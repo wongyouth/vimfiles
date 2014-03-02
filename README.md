@@ -8,6 +8,16 @@ or if you use Mac
 
     brew install ctags
 
+## Break Notice
+
+In order to load large project faster in `<C-P>`, the`Fuzzy Finder` mode,
+the new version started to use [Unite](https://github.com/Shougo/unite.vim) which loads
+files asynchronously and not cause VIM freezing.
+To support that I switched from `vundle` to `neobundle`,
+If you use this repo from old version, you need run code below and restart VIM to upgrade.
+
+    git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+
 ## One Line Installation:
 
     bash <(curl -s https://raw.github.com/wongyouth/vimfiles/master/install.sh)
