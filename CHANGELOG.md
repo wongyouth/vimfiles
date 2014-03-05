@@ -2,6 +2,10 @@
 
 [2014-02-28 24:06:01]
 
+* Add back `honza/vim-snippets`. `wongyouth/vim-snippets` only including extra snippets.
+
+[2014-02-28 24:06:01]
+
 * Add back `NERDTree`
 * disable `scrooloose/syntastic` since it cause saving file very slowly.
 * Change README

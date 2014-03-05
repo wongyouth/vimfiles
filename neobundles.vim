@@ -110,7 +110,8 @@ NeoBundle 'rickharris/vim-monokai'
 "NeoBundle 'honza/vim-snippets'
 NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'Shougo/neosnippet.vim'
-NeoBundle 'wongyouth/vim-snippets'
+NeoBundle 'honza/vim-snippets'
+NeoBundle 'wongyouth/vim-snippets', {'name': 'wongyouth-vim-snippets'}
 
 "-------------------------"
 " Vimim for chinese input

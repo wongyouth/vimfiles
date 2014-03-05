@@ -83,7 +83,7 @@ Many other good stuff, see vim-plugins list below
 
 ### update vim plugins
 
-* `:NeoBundleInstall!`  - update vim plugins
+* `:NeoBundleUpdate!`  - update vim plugins
 
 ### File explorer
 
