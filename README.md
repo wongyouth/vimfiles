@@ -52,7 +52,7 @@ If you use this repo from old version, you need run code below and restart VIM t
 * `<leader>U` converts the first char of a word to uppercase
 * `<leader>L` converts the first char of a word to lowercase
 
-If ~/.vim.after exists it will be loaded at the very ending, you can write your own customization there.
+If ~/.vimrc.after exists it will be loaded at the very ending, you can write your own customization there.
 
 ## Features
 

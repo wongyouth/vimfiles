@@ -22,6 +22,7 @@ endif
 
 call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
+call unite#filters#sorter_default#use(['sorter_rank'])
 
 nnoremap <silent> <leader>uf :<C-u>Unite file<CR>
 nnoremap <silent> <leader>ufr :<C-u>Unite file_rec<CR>

@@ -1,5 +1,9 @@
 ## Change log
 
+[2014-03-10]
+
+* enable `scrooloose/syntastic`, you could disable it by `NeoBundleDisable syntastic` in your `~/.vimrc.after` if you want.
+
 [2014-02-28 24:06:01]
 
 * Add back `honza/vim-snippets`. `wongyouth/vim-snippets` only including extra snippets.
