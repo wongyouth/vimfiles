@@ -52,7 +52,10 @@ If you use this repo from old version, you need run code below and restart VIM t
 * `<leader>U` converts the first char of a word to uppercase
 * `<leader>L` converts the first char of a word to lowercase
 
+I want to remind that <Leader> in most cases is "\" key.
+
 If ~/.vimrc.after exists it will be loaded at the very ending, you can write your own customization there.
+You may have a look at the sample in the [vimrc.after](vimrc.after).
 
 ## Features
 
@@ -154,7 +157,7 @@ Many other good stuff, see vim-plugins list below
 * `crc` (`camelCase`)  - `foo_bar` -> `fooBar`
 * `cru` (`UPPER_CASE`) - `foo_bar` -> `FOO_BAR`, more on `:h cr`
 
-* `\P` - preview markdown, textile text turns to html output in browser, need `ruby` built in Vim, `bluecloth`, `RedCloth` and other gems installed in system environemnt (not in rvm or rbenv env) for support converting. more `:h preview`
+* `\P` - preview markdown, textile text turns to html output in browser, need `ruby` built in Vim, `redcarpet` gems installed in system environemnt (not in rvm or rbenv env) for support converting. more `:h preview`
 
 ## Vim plugins included in bundles
 

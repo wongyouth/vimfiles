@@ -1,5 +1,12 @@
 ## Change log
 
+[2014-03-11 19:23]
+
+* add 'Shougo/vimshell.vim'
+* update 'wongyouth-vim-snippets'
+* add neocomplete config
+* add vimrc.after for demo
+
 [2014-03-10]
 
 * enable `scrooloose/syntastic`, you could disable it by `NeoBundleDisable syntastic` in your `~/.vimrc.after` if you want.

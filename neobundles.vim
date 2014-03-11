@@ -34,6 +34,8 @@ NeoBundle 'tpope/vim-repeat'
 NeoBundle 'tpope/vim-unimpaired'
 NeoBundle 'tpope/vim-rails'
 NeoBundle 'tpope/vim-endwise'
+NeoBundle 'tpope/vim-rbenv'
+NeoBundle 'tpope/vim-rvm'
 
 "--------------------------
 " utility
@@ -51,6 +53,7 @@ NeoBundle 'mattn/emmet-vim'
 NeoBundle 'vim-scripts/loremipsum'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
+
 NeoBundle 'lucapette/vim-ruby-doc'
 NeoBundle 'lucapette/vim-jquery-doc'
 NeoBundle 'scrooloose/syntastic'
@@ -104,12 +107,13 @@ NeoBundle 'rickharris/vim-monokai'
 "--------------------------
 " snipmate
 "--------------------------
-"NeoBundle 'garbas/vim-snipmate' "replaced with neoshippet
-"NeoBundle 'tomtom/tlib_vim'
 "NeoBundle 'MarcWeber/vim-addon-mw-utils'
-"NeoBundle 'honza/vim-snippets'
-NeoBundle 'Shougo/neocomplcache.vim'
+"NeoBundle 'tomtom/tlib_vim'
+"NeoBundle 'garbas/vim-snipmate' "replaced with neoshippet
 NeoBundle 'Shougo/neosnippet.vim'
+
+NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'honza/vim-snippets'
 NeoBundle 'wongyouth/vim-snippets', {'name': 'wongyouth-vim-snippets'}
 

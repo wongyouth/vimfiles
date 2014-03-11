@@ -1,0 +1,10 @@
+" Diable syntastic because it's slow sometime.
+NeoBundleDisable syntastic
+
+" Switch to neocomplete which is faster, but you have to use vim with lua
+" enabled. To check if lua enabled, run `:echo has("lua")`
+"
+" brew install macvim --with-cscope --with-lua --HEAD
+" refer to http://vim.wikia.com/wiki/Building_Vim if you are use linux.
+NeoBundleDisable neocomplcache.vim
+NeoBundle 'Shougo/neocomplete.vim'
