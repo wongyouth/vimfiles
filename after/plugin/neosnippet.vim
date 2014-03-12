@@ -5,11 +5,9 @@ endif
 " Enable snipMate compatibility feature.
 let g:neosnippet#enable_snipmate_compatibility = 1
 
-"let g:neosnippet#enable_word_expand = 1
-
 " Tell Neosnippet the path of snippets
 "let g:neosnippet#snippets_directory='~/.vim/bundle/vim-snippets/snippets'
-let g:neosnippet#snippets_directory='~/.vim/bundle/wongyouth-vim-snippets/snippets'
+"let g:neosnippet#snippets_directory='~/.vim/bundle/wongyouth-vim-snippets/snippets'
 
 " Plugin key-mappings.
 imap <C-i>     <Plug>(neosnippet_expand_or_jump)

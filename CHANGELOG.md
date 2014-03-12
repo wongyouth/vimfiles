@@ -1,5 +1,9 @@
 ## Change log
 
+[2014-03-12 11:24]
+
+* update to lasted neosnippet to enable `option word` by default.
+
 [2014-03-11 19:23]
 
 * add 'Shougo/vimshell.vim'
