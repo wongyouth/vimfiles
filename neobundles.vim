@@ -110,12 +110,13 @@ NeoBundle 'rickharris/vim-monokai'
 "NeoBundle 'MarcWeber/vim-addon-mw-utils'
 "NeoBundle 'tomtom/tlib_vim'
 "NeoBundle 'garbas/vim-snipmate' "replaced with neoshippet
+"NeoBundle 'SirVer/ultisnips'
 NeoBundle 'Shougo/neosnippet.vim'
 
 NeoBundle 'Shougo/neocomplcache.vim'
-NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'honza/vim-snippets'
-NeoBundle 'wongyouth/vim-snippets', {'name': 'wongyouth-vim-snippets'}
+"NeoBundle 'Shougo/vimshell.vim'
+"NeoBundle 'honza/vim-snippets'
+NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
 
 "-------------------------"
 " Vimim for chinese input

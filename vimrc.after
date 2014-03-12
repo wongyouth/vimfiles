@@ -8,3 +8,10 @@ NeoBundleDisable syntastic
 " refer to http://vim.wikia.com/wiki/Building_Vim if you are use linux.
 NeoBundleDisable neocomplcache.vim
 NeoBundle 'Shougo/neocomplete.vim'
+
+" vimshell's a little bit heavy, so I moved it here
+NeoBundle 'Shougo/vimshell.vim'
+
+" Experimental
+NeoBundle 'Shougo/context_filetype.vim'
+
