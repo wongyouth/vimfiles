@@ -43,6 +43,7 @@ set enc=utf-8
 " normal setting
 "--------------------
 set number
+set relativenumber
 set autoindent
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
@@ -148,7 +149,7 @@ vnoremap <D-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=subst
 " F4 toggle for paste, Insert Mode
 set pastetoggle=<F4>
 " toggle for copy & paste, Normal Mode
-nnoremap <silent> <F4> :set nu!<CR>:set list!<CR>
+nnoremap <silent> <F4> :set nu!<CR>:set rnu!<CR>:set list!<CR>
 " toggle mouse with F12, for selection be copied to system clipboard
 set mouse=a
 " set windows only
