@@ -282,7 +282,8 @@ Many other good stuff, see vim-plugins list below
 
 * [vim-github-colorscheme](https://github.com/endel/vim-github-colorscheme) A vim colorscheme based on Github's syntax highlighting. Created by Anthony Carapetis
 
-* [monokai](https://github.com/rickharris/vim-monokai) Monokai for vim.
+* <del datetime="2014-05-13T16:31:27 +0800">[monokai](https://github.com/rickharris/vim-monokai) Monokai for vim.</del>
+* [monokai](https://github.com/sickill/vim-monokai) Monokai for vim.
 
 ## Screenshots
 

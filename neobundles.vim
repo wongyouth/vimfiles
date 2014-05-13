@@ -102,7 +102,7 @@ NeoBundle 'heartsentwined/vim-emblem'
 NeoBundle 'rickharris/vim-blackboard'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'endel/vim-github-colorscheme'
-NeoBundle 'rickharris/vim-monokai'
+NeoBundle 'sickill/vim-monokai'
 
 "--------------------------
 " snipmate

@@ -1,5 +1,9 @@
 ## Change log
 
+[2014-05-13 16:32]
+
+* replace rickharris/vim-monokai with sickill/vim-monokai for better matching brackets highlighting
+
 [2014-05-13 09:31]
 
 * add equalprg to json to pretty format json
