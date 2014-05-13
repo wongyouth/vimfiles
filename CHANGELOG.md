@@ -1,8 +1,20 @@
 ## Change log
 
+[2014-05-13 09:31]
+
+* add equalprg to json to pretty format json
+* add equalprg to ruby to pretty format ruby hash
+* add more comment in vimrc
+* `\W` to trim trailing spaces in file
+* `\S` to trim leading spaces in file
+* `\D` to blank line in file
+* `\gp` to exec `git push`
+* left arrow key can to back to the ending of previous line
+* add Shougo/context_filetype to vimrc.after example file
+
 [2014-03-12 11:24]
 
-* update to lasted neosnippet to enable `option word` by default.
+* update to latest neosnippet to enable `option word` by default.
 
 [2014-03-11 19:23]
 
@@ -13,7 +25,7 @@
 
 [2014-03-10]
 
-* enable `scrooloose/syntastic`, you could disable it by `NeoBundleDisable syntastic` in your `~/.vimrc.after` if you want.
+* recover `scrooloose/syntastic`, you could disable it by `NeoBundleDisable syntastic` in your `~/.vimrc.after` if you want.
 
 [2014-02-28 24:06:01]
 
@@ -28,9 +40,9 @@
 
 [2013-11-14 13:10:07]
 
-* Remove `Vundle` in favor of `NeoBundle` which can build vimproc automatically.
+* Remove `Vundle` in favor of `NeoBundle` which can build `vimproc` automatically.
 * Remove `NERDTree` in favor of Unite-file
-* Remove `Ctrlp` in favor of Unite-file_rec
+* Remove `Ctrlp` in favor of Unite-file_rec/asyc
 * Remove `BufExplorer` in favor of Unite-buffer
 * Add `vimproc` for Unite-file_rec/async
 

@@ -1,9 +1,7 @@
-"------------------------------
-" Vundle and bundles config
-"------------------------------
-"source ~/.vim/bundles.vim
-
-" Use neobundle to automatically build vimproc
+" Using NeoBundle over Vundle is to automatically build vimproc,
+" and vimproc is used for asynchronously loading files when you load file list
+" for feature like Ctrl-P, which is implemented by Unite file_rec/async.
+" So it will not freeze Vim when you work in a large project.
 "------------------------------
 " NeoBundle and bundles config
 "------------------------------
@@ -22,12 +20,16 @@ set shell=/bin/bash
 "----------------------------
 filetype plugin indent on
 syntax on
+
+" fold {
 "set foldmethod=syntax
 "set foldlevel=1
+" }
 
 "--------------------
 " colorscheme
 "--------------------
+" desert for terminal, use other scheme in gvimrc
 color desert
 
 "let g:solarized_termtrans = 1
@@ -36,15 +38,21 @@ color desert
 "--------------------
 " encoding
 "--------------------
+" To detect Chinese, and Japanese
 set fencs=utf-8,cp936,sjis
 set enc=utf-8
 
 "--------------------
 " normal setting
 "--------------------
-set number
-set relativenumber
-set autoindent
+set number " show number
+
+" relativenumber is new feature since Vim version 7.4
+if exists('+relativenumber')
+  set relativenumber
+endif
+
+set autoindent " indent the same level of the previous line
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 
 " This means that you can have unwritten changes to a file and open a new file
@@ -79,10 +87,18 @@ set laststatus=2
 "set listchars=tab:▸\ ,eol:¬
 set listchars=tab:▸\ 
 set list
+
+" the default leader is '\', you can change it to anything else if you want.
+" mapleader = ','
+
 " nnoremap toggle, or use F4
-nnoremap <leader>l :set list!<cr>
+nnoremap <leader>l :set list!<CR>
 " trim trailing whitespace
-nnoremap <leader>W :%s/\s\+$//c<cr>
+nnoremap <leader>W :%s/\s\+$//gc<CR>
+" trim spaces in line
+nnoremap <leader>S :%s/^\s\+$//gc<CR>
+" delete space line
+nnoremap <leader>D :%s/\n\{2,\}/\r/gc<CR>
 
 "------------------------------------
 " highlight trailing space
@@ -146,14 +162,13 @@ vnoremap <F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>
 vnoremap <C-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
 vnoremap <D-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=substitute(@s,'\n','\\n','g')<cr>//gc<left><left><left>
 
-" F4 toggle for paste, Insert Mode
-set pastetoggle=<F4>
-" toggle for copy & paste, Normal Mode
+set pastetoggle=<F4> " sane indentation on pastes when in insert mode
+" toggle showing number, relativenumber and list
 nnoremap <silent> <F4> :set nu!<CR>:set rnu!<CR>:set list!<CR>
-" toggle mouse with F12, for selection be copied to system clipboard
+" toggle mouse with F12, so selection can to be copied to system clipboard
 set mouse=a
 " set windows only
-nnoremap <silent> <F11> :on<cr>
+nnoremap <silent> <F11> :on<CR>
 
 "--------------------------------
 " copyed from junas vim config
@@ -207,9 +222,7 @@ noremap <silent> <C-right> <esc><C-W><right>
 noremap <silent> <C-up> <esc><C-W><up>
 noremap <silent> <C-down> <esc><C-W><down>
 
-"----------------------------
-" Tab navigation
-"----------------------------
+" Tab navigation {
 noremap <silent> tf :tabfirst<cr>
 noremap <silent> tl :tablast<cr>
 noremap <silent> tp :tabprevious<cr>
@@ -218,34 +231,42 @@ noremap <silent> tc :tabclose<cr>
 noremap <silent> ts :tab split<cr>
 noremap te :tabedit<space>
 noremap tm :tabmove<space>
+" }
 
 
-"---------------------------
-" Rails map
-"---------------------------
+" Rails {
 nnoremap <silent> rdm :Rake db:migrate<cr>
 nnoremap <silent> rds :Rake db:seed<cr>
+" }
 
-"---------------------------
-" Git map
-"---------------------------
+" Fugitive {
 nnoremap <leader>gs :Gstatus<CR>
 nnoremap <leader>gd :Gdiff<CR>
 nnoremap <leader>gi :Git<CR>
 nnoremap <leader>gb :Gblame<CR>
 nnoremap <leader>ge :Gedit<CR>
+nnoremap <leader>gp :Git push<CR>
+" }
 
 "----------------------------
 " Abbreviation
 "----------------------------
+" you may check out the snippets first.
 
-"----------------------------
-" Filter
-"----------------------------
+" Filter {
 autocmd filetype html setlocal equalprg=html-beautify\ -f\ -\ -s\ 2
 autocmd filetype css setlocal equalprg=css-beautify\ -f\ -\ -s\ 2
 autocmd filetype js setlocal equalprg=js-beautify\ -f\ -\ -s\ 2
+autocmd FileType json setlocal equalprg=python\ -m\ json.tool
+autocmd FileType ruby setlocal equalprg=ruby\ -rawesome_print\ -e\ 'ap(eval(STDIN.read))'
+" }
 
+" Supporting customized script {
 if filereadable(expand("~/.vimrc.after"))
   source ~/.vimrc.after
 endif
+" }
+
+" allow arrow to go to previous or next line
+set whichwrap+=<,>,[,],h,l
+

@@ -13,5 +13,5 @@ NeoBundle 'Shougo/neocomplete.vim'
 NeoBundle 'Shougo/vimshell.vim'
 
 " Experimental
-NeoBundle 'Shougo/context_filetype.vim'
+"NeoBundle 'Shougo/context_filetype.vim'
 

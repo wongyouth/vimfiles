@@ -20,7 +20,7 @@ if !exists('g:bufexplorer_version')
   nnoremap <C-k> :<C-u>Unite buffer<CR>
 endif
 
-call unite#filters#matcher_default#use(['matcher_fuzzy'])
+"call unite#filters#matcher_default#use(['matcher_fuzzy'])
 "call unite#custom#source('file,file/new,buffer,file_rec', 'matchers', 'matcher_fuzzy')
 call unite#filters#sorter_default#use(['sorter_rank'])
 
