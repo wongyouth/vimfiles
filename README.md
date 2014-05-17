@@ -20,7 +20,7 @@ If you use this repo from old version, you need run code below and restart VIM t
 
 ## One Line Installation:
 
-    bash <(curl -s https://raw.github.com/wongyouth/vimfiles/master/install.sh)
+    bash <(wget -O- https://raw.github.com/wongyouth/vimfiles/master/install.sh)
 
 ## Old School Installation:
 
