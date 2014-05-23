@@ -121,7 +121,7 @@ NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
 "-------------------------"
 " Vimim for chinese input
 "-------------------------"
-NeoBundle 'vimim/vimim'
+"NeoBundle 'vimim/vimim'
 
 filetype plugin indent on     " Required!
 "
