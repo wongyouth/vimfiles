@@ -237,6 +237,11 @@ noremap tm :tabmove<space>
 " Rails {
 nnoremap <silent> rdm :Rake db:migrate<cr>
 nnoremap <silent> rds :Rake db:seed<cr>
+" convert flash message to I18n.t message
+nmap <silent> rs2u vi':s/\%V\s/_/g<cr>$F.x1hcrsiflashes.<esc>
+" add t() to suround message
+nmap <silent> r18t F'vf'S)it<esc>f'l
+nmap <silent> rfm rs2ur18t
 " }
 
 " Fugitive {
@@ -258,6 +263,9 @@ autocmd filetype html setlocal equalprg=html-beautify\ -f\ -\ -s\ 2
 autocmd filetype css setlocal equalprg=css-beautify\ -f\ -\ -s\ 2
 autocmd filetype js setlocal equalprg=js-beautify\ -f\ -\ -s\ 2
 autocmd FileType json setlocal equalprg=python\ -m\ json.tool
+
+" To turn Datetime to a String
+nnoremap rt2s :s/\(\d\{4}-\d\d\-\d\d \d\d:\d\d:\d\d[^,]*\),/"\1",/g<cr>
 autocmd FileType ruby setlocal equalprg=ruby\ -rawesome_print\ -e\ 'ap(eval(STDIN.read))'
 " }
 
