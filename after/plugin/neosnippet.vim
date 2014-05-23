@@ -30,4 +30,4 @@ endif
 au BufRead,BufNewFile *.html.erb set ft=eruby.html
 
 " delete markers when InsertLeave event
-"autocmd InsertLeave * NeoSnippetClearMarkers
+autocmd InsertLeave * NeoSnippetClearMarkers
