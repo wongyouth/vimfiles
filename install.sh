@@ -25,4 +25,5 @@ cd ~/.vim
 
 mkdir -p ~/.vim/bundle
 git clone git://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
+. ~/.vim/bundle/neobundle.vim/bin/neoinstall vimproc.vim
 . ~/.vim/bundle/neobundle.vim/bin/neoinstall
