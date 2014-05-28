@@ -237,10 +237,13 @@ noremap tm :tabmove<space>
 " Rails {
 nnoremap <silent> rdm :Rake db:migrate<cr>
 nnoremap <silent> rds :Rake db:seed<cr>
-" convert flash message to I18n.t message
-nmap <silent> rs2u vi':s/\%V\s/_/g<cr>$F.x1hcrsiflashes.<esc>
-" add t() to suround message
-nmap <silent> r18t F'vf'S)it<esc>f'l
+" convert spaces to underline, lower all characters
+nmap <silent> rs2u vi':s/\%V\s/_/g<cr>``crs
+" add `flashes.` in front of flash message
+nmap <silent> rfla rs2uF'aflashes.<esc>
+" add t() to surround message
+nmap <silent> r18t F'vf'S)iI18n.t<esc>f'l
+" Rails flash message
 nmap <silent> rfm rs2ur18t
 " }
 
