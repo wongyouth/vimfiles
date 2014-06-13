@@ -100,16 +100,6 @@ nnoremap <leader>S :%s/^\s\+$//gc<CR>
 " delete space line
 nnoremap <leader>D :%s/\n\{2,\}/\r/gc<CR>
 
-"------------------------------------
-" highlight trailing space
-"------------------------------------
-" comment out lines below to unhighlight trailing space
-"let no_trailing_space_error = 1
-if !exists('no_trailing_space_error')
-  au BufWinEnter * hi link TrailingSpace Error
-  au BufWinEnter * syn match TrailingSpace /\s\+$/ display
-endif
-
 "--------------------------------------------------------
 " highline current line & column
 " DOES NOT WORK with colorscheme solarized and blackboard
@@ -238,13 +228,13 @@ noremap tm :tabmove<space>
 nnoremap <silent> rdm :Rake db:migrate<cr>
 nnoremap <silent> rds :Rake db:seed<cr>
 " convert spaces to underline, lower all characters
-nmap <silent> rs2u vi':s/\%V\s/_/g<cr>``crs
+nmap <silent> rs2u cs"'vi':s/\%V\s/_/g<cr>``crs
 " add `flashes.` in front of flash message
 nmap <silent> rfla rs2uF'aflashes.<esc>
 " add t() to surround message
-nmap <silent> r18t F'vf'S)iI18n.t<esc>f'l
+nmap <silent> r18t F'vf'S)it<esc>f'l
 " Rails flash message
-nmap <silent> rfm rs2ur18t
+nmap <silent> rfm rflar18t
 " }
 
 " Fugitive {

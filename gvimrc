@@ -14,6 +14,8 @@ endif
 "set background=dark | light
 "set background=light
 
+hi ExtraWhitespace guibg=#882424
+
 "----------------------------
 " Invisible character colors
 "----------------------------

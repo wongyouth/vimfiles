@@ -44,7 +44,8 @@ NeoBundle 'edsono/vim-matchit'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'greyblake/vim-preview'
 NeoBundle 'vim-scripts/jsbeautify'
-NeoBundle 'vim-scripts/The-NERD-Commenter'
+"NeoBundle 'vim-scripts/The-NERD-Commenter'
+NeoBundle 'tomtom/tcomment_vim'
 NeoBundle 'godlygeek/tabular'
 NeoBundle 'nvie/vim-togglemouse'
 " successor of zencoding
@@ -95,6 +96,9 @@ NeoBundle 'skammer/vim-css-color'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 NeoBundle 'heartsentwined/vim-emblem'
+
+" highlights trailing whitespace
+NeoBundle 'bronson/vim-trailing-whitespace'
 
 "--------------------------
 " color scheme

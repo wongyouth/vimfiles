@@ -1,5 +1,10 @@
 ## Change log
 
+[2014-06-14 00:41]
+
+* add `bronson/vim-trailing-whitespace` plugin
+* replace NerdCommenter with tcomment_vim
+
 [2014-05-13 16:32]
 
 * replace rickharris/vim-monokai with sickill/vim-monokai for better matching brackets highlighting

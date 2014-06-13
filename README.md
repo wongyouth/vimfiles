@@ -64,6 +64,7 @@ You may have a look at the sample in the [vimrc.after](vimrc.after).
 * Ctrl-P TextMate like file exploring
 * [Unite](https://github.com/Shougo/unite.vim) integrated, loading files asynchronously make loading faster in large project.
 * NERDCommenter
+* tcomment_vim
 * Git integrated
 * Emmet (formerly Zen Coding)
 * Ctags
@@ -133,8 +134,7 @@ Many other good stuff, see vim-plugins list below
 * `<F5>`  - toggle Gundo window (history window)
 * `<F12>` - toggle mouse (for terminal vim)
 
-* `\cc`       - comment out
-* `\c<SPACE>` - reverting comment out
+* gcc   - Toggle comment for the current line
 
 * `\ff` - javascript formatting
 * `{visual}=` - css,js,html formatting if have js-beautify installed.
@@ -186,7 +186,9 @@ Many other good stuff, see vim-plugins list below
 
 * [togglemouse](https://github.com/nvie/vim-togglemouse) Toggles the mouse focus between Vim and your terminal emulator, allowing terminal emulator mouse commands, like copy/paste.
 
-* [The-NERD-Commenter](https://github.com/vim-scripts/The-NERD-Commenter) A plugin that allows for easy commenting of code for many filetypes.
+* <del datetime="2014-06-14T00:47:39 +0800">[The-NERD-Commenter](https://github.com/vim-scripts/The-NERD-Commenter) A plugin that allows for easy commenting of code for many filetypes.</del>
+
+* [tcomment_vim](https://github.com/tomtom/tcomment_vim) An extensible & universal comment vim-plugin that also handles embedded filetypes
 
 * [tabular](https://github.com/godlygeek/tabular) Vim script for text filtering and alignment
 
