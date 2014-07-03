@@ -67,6 +67,8 @@ NeoBundle 'vim-scripts/BufOnly.vim'
 NeoBundle 'bling/vim-airline'
 NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'airblade/vim-gitgutter'
+" highlights trailing whitespace
+NeoBundle 'bronson/vim-trailing-whitespace'
 
 "--------------------------
 " tool for explorer
@@ -95,10 +97,8 @@ NeoBundle 'tpope/vim-haml'
 NeoBundle 'skammer/vim-css-color'
 NeoBundle 'nono/vim-handlebars'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
-NeoBundle 'heartsentwined/vim-emblem'
-
-" highlights trailing whitespace
-NeoBundle 'bronson/vim-trailing-whitespace'
+" NeoBundle 'heartsentwined/vim-emblem'
+NeoBundle 'digitaltoad/vim-jade'
 
 "--------------------------
 " color scheme
@@ -119,8 +119,8 @@ NeoBundle 'Shougo/neosnippet.vim'
 
 NeoBundle 'Shougo/neocomplcache.vim'
 "NeoBundle 'Shougo/vimshell.vim'
-"NeoBundle 'honza/vim-snippets'
-NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
+NeoBundle 'honza/vim-snippets'
+" NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
 
 "-------------------------"
 " Vimim for chinese input

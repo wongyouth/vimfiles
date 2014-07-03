@@ -260,7 +260,9 @@ Many other good stuff, see vim-plugins list below
 
 * [AnsiEsc](https://github.com/vim-scripts/AnsiEsc.vim) ansi escape sequences concealed, but highlighted as specified (conceal)
 
-* [vim-emblem](https://github.com/heartsentwined/vim-emblem) emblem support to vim
+* <del datetime="2014-07-03T16:11:59 +0800">[vim-emblem](https://github.com/heartsentwined/vim-emblem) emblem support to vim</del>
+
+* [vim-jade](https://github.com/digitaltoad/vim-jade) Vim Jade template engine syntax highlighting and indention
 
 ### Code Snippets
 

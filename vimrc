@@ -23,7 +23,8 @@ syntax on
 
 " fold {
 "set foldmethod=syntax
-"set foldlevel=1
+"set foldlevel=2
+"map <2-LeftMouse> za
 " }
 
 "--------------------
@@ -48,9 +49,9 @@ set enc=utf-8
 set number " show number
 
 " relativenumber is new feature since Vim version 7.4
-if exists('+relativenumber')
-  set relativenumber
-endif
+" if exists('+relativenumber')
+"   set relativenumber
+" endif
 
 set autoindent " indent the same level of the previous line
 set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
@@ -155,6 +156,10 @@ vnoremap <D-F3> "sy/<c-r>=substitute(@s,'\n','\\n','g')<cr>/<cr>N:%s/<c-r>=subst
 set pastetoggle=<F4> " sane indentation on pastes when in insert mode
 " toggle showing number, relativenumber and list
 nnoremap <silent> <F4> :set nu!<CR>:set rnu!<CR>:set list!<CR>
+" toggle relativenumber
+if exists('+relativenumber')
+  nnoremap <silent> <F10> :set rnu!<CR>
+endif
 " toggle mouse with F12, so selection can to be copied to system clipboard
 set mouse=a
 " set windows only

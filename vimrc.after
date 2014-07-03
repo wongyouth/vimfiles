@@ -15,3 +15,7 @@ NeoBundle 'Shougo/vimshell.vim'
 " Experimental
 "NeoBundle 'Shougo/context_filetype.vim'
 
+" Enable fold
+set fdm=indent
+set foldlevel=2
+map <2-LeftMouse> za

@@ -1,5 +1,10 @@
 ## Change log
 
+[2014-07-01 16:03]
+
+* add `digitaltoad/vim-jade`
+* disable relativenumber by default
+
 [2014-06-14 00:41]
 
 * add `bronson/vim-trailing-whitespace` plugin
