@@ -55,8 +55,11 @@ NeoBundle 'vim-scripts/loremipsum'
 NeoBundle 'Lokaltog/vim-easymotion'
 NeoBundle 'vim-ruby/vim-ruby'
 
+" document viewer
 NeoBundle 'lucapette/vim-ruby-doc'
 NeoBundle 'lucapette/vim-jquery-doc'
+NeoBundle 'rizzatti/dash.vim'
+
 NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'wincent/Command-T'
 NeoBundle 'sjl/gundo.vim'
@@ -69,6 +72,8 @@ NeoBundle 'nathanaelkane/vim-indent-guides'
 NeoBundle 'airblade/vim-gitgutter'
 " highlights trailing whitespace
 NeoBundle 'bronson/vim-trailing-whitespace'
+" Local rc
+NeoBundle 'thinca/vim-localrc'
 
 "--------------------------
 " tool for explorer

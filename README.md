@@ -218,9 +218,15 @@ Many other good stuff, see vim-plugins list below
 
 * [vim-indent-guides](https://github.com/nathanaelkane/vim-indent-guides) A Vim plugin for visually displaying indent levels in code
 
+### Mac plugin
+
+* [Dash.vim](https://github.com/rizzatti/dash.vim) Search Dash.app from Vim
+
 ## <del datetime="2013-11-14 12:59:48">Vim plugins included in the submodules</del>
 
 * <del datetime="2013-11-14 12:59:48">[vundle](https://github.com/gmarik/vundle) Vundle, the plug-in manager for Vim</del>
+
+* [vim-localrc](https://github.com/thinca/vim-localrc) Enable configuration file of each directory.
 
 ### File explorer
 

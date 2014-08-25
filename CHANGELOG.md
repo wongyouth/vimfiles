@@ -1,5 +1,13 @@
 ## Change log
 
+[2014-08-25 14:36]
+
+* add `rizzatti/dash.vim`
+
+[2014-07-06 13:44]
+
+* add `thinca/vim-localrc`
+
 [2014-07-01 16:03]
 
 * add `digitaltoad/vim-jade`
