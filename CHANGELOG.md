@@ -1,5 +1,10 @@
 ## Change log
 
+[2014-10-11 17:57]
+
+* add `seratch/vim-angular-coffee`
+* add `matthewsimo/angular-vim-snippets`
+
 [2014-08-25 14:36]
 
 * add `rizzatti/dash.vim`

@@ -92,6 +92,8 @@ NeoBundle 'mileszs/ack.vim'
 "--------------------------
 " filetype syntax highlight
 "--------------------------
+"NeoBundle 'burnettk/vim-angular'
+NeoBundle 'seratch/vim-angular-coffee'
 NeoBundle 'groenewege/vim-less'
 NeoBundle 'kchmck/vim-coffee-script'
 " use builtin markdown support (vim 7.3)
@@ -126,6 +128,7 @@ NeoBundle 'Shougo/neocomplcache.vim'
 "NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'honza/vim-snippets'
 " NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
+NeoBundle 'matthewsimo/angular-vim-snippets'
 
 "-------------------------"
 " Vimim for chinese input
