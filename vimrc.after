@@ -6,8 +6,10 @@ NeoBundleDisable syntastic
 "
 " brew install macvim --with-cscope --with-lua --HEAD
 " refer to http://vim.wikia.com/wiki/Building_Vim if you are use linux.
-NeoBundleDisable neocomplcache.vim
-NeoBundle 'Shougo/neocomplete.vim'
+if has('lua')
+  NeoBundleDisable neocomplcache.vim
+  NeoBundle 'Shougo/neocomplete.vim'
+endif
 
 " vimshell's a little bit heavy, so I moved it here
 NeoBundle 'Shougo/vimshell.vim'
