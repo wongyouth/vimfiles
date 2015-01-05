@@ -139,6 +139,9 @@ if has("autocmd")
 
   " set god filetype to ruby
   autocmd bufnewfile,bufread *.god set filetype=ruby
+
+  " set es6 as javascript
+  autocmd BufRead,BufNewFile *.es6 set filetype=javascript
 endif
 
 "-----------------------

@@ -107,6 +107,7 @@ NeoBundle 'nono/vim-handlebars'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 " NeoBundle 'heartsentwined/vim-emblem'
 NeoBundle 'digitaltoad/vim-jade'
+" NeoBundle 'othree/yajs.vim'
 
 "--------------------------
 " color scheme
