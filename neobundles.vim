@@ -75,6 +75,8 @@ NeoBundle 'airblade/vim-gitgutter'
 NeoBundle 'bronson/vim-trailing-whitespace'
 " Local rc
 NeoBundle 'thinca/vim-localrc'
+" i18n
+NeoBundle 'stefanoverna/vim-i18n'
 
 "--------------------------
 " tool for explorer
