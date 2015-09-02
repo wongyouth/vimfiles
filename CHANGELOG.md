@@ -1,5 +1,10 @@
 ## Change log
 
+[2015-09-02 10:12]
+
+* add `isRuslan/vim-es6`
+* add `mxw/vim-jsx`
+
 [2014-10-11 17:57]
 
 * add `seratch/vim-angular-coffee`

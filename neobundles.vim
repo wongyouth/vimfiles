@@ -110,6 +110,7 @@ NeoBundle 'vim-scripts/AnsiEsc.vim'
 " NeoBundle 'heartsentwined/vim-emblem'
 NeoBundle 'digitaltoad/vim-jade'
 " NeoBundle 'othree/yajs.vim'
+" NeoBundle 'ekalinin/Dockerfile.vim'
 
 "--------------------------
 " color scheme
@@ -132,7 +133,10 @@ NeoBundle 'Shougo/neocomplcache.vim'
 "NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'honza/vim-snippets'
 " NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
+NeoBundle 'isRuslan/vim-es6'
 NeoBundle 'matthewsimo/angular-vim-snippets'
+NeoBundle 'mxw/vim-jsx'
+
 
 "-------------------------"
 " Vimim for chinese input
