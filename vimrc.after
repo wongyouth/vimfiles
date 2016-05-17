@@ -1,22 +1,3 @@
-" Diable syntastic because it's slow sometime.
-NeoBundleDisable syntastic
-
-" Switch to neocomplete which is faster, but you have to use vim with lua
-" enabled. To check if lua enabled, run `:echo has("lua")`
-"
-" brew install macvim --with-cscope --with-lua --HEAD
-" refer to http://vim.wikia.com/wiki/Building_Vim if you are use linux.
-if has('lua')
-  NeoBundleDisable neocomplcache.vim
-  NeoBundle 'Shougo/neocomplete.vim'
-endif
-
-" vimshell's a little bit heavy, so I moved it here
-NeoBundle 'Shougo/vimshell.vim'
-
-" Experimental
-"NeoBundle 'Shougo/context_filetype.vim'
-
 " Enable fold
 set fdm=indent
 set foldlevel=2

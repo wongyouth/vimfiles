@@ -70,7 +70,7 @@ NeoBundle 'vim-scripts/BufOnly.vim'
 " statusline
 NeoBundle 'bling/vim-airline'
 NeoBundle 'nathanaelkane/vim-indent-guides'
-NeoBundle 'airblade/vim-gitgutter'
+"NeoBundle 'airblade/vim-gitgutter'
 " highlights trailing whitespace
 NeoBundle 'bronson/vim-trailing-whitespace'
 " Local rc
@@ -95,20 +95,15 @@ NeoBundle 'mileszs/ack.vim'
 "--------------------------
 " filetype syntax highlight
 "--------------------------
-"NeoBundle 'burnettk/vim-angular'
-NeoBundle 'seratch/vim-angular-coffee'
 NeoBundle 'groenewege/vim-less'
-NeoBundle 'kchmck/vim-coffee-script'
 " use builtin markdown support (vim 7.3)
 "NeoBundle 'plasticboy/vim-markdown'
 NeoBundle 'depuracao/vim-rdoc'
 NeoBundle 'tpope/vim-haml'
 "NeoBundle 'mamut/vim-css-hex'
 NeoBundle 'skammer/vim-css-color'
-NeoBundle 'nono/vim-handlebars'
 NeoBundle 'vim-scripts/AnsiEsc.vim'
 " NeoBundle 'heartsentwined/vim-emblem'
-NeoBundle 'digitaltoad/vim-jade'
 " NeoBundle 'othree/yajs.vim'
 " NeoBundle 'ekalinin/Dockerfile.vim'
 
@@ -123,25 +118,48 @@ NeoBundle 'sickill/vim-monokai'
 "--------------------------
 " snipmate
 "--------------------------
+NeoBundle 'Shougo/neocomplcache.vim'
+"NeoBundle 'Shougo/neocomplete.vim'
+"NeoBundle 'Shougo/vimshell.vim'
+NeoBundle 'Shougo/neosnippet.vim'
+NeoBundle 'Shougo/neosnippet-snippets'
+" NeoBundle 'honza/vim-snippets'
+" NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
+
 "NeoBundle 'MarcWeber/vim-addon-mw-utils'
 "NeoBundle 'tomtom/tlib_vim'
 "NeoBundle 'garbas/vim-snipmate' "replaced with neoshippet
 "NeoBundle 'SirVer/ultisnips'
-NeoBundle 'Shougo/neosnippet.vim'
 
-NeoBundle 'Shougo/neocomplcache.vim'
-"NeoBundle 'Shougo/vimshell.vim'
-NeoBundle 'honza/vim-snippets'
-" NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
+"--------------------------
+" HTML
+"--------------------------
+"NeoBundle 'nono/vim-handlebars'
+NeoBundle 'digitaltoad/vim-jade'
+"--------------------------
+" Javascript
+"--------------------------
+" CoffeeScript
+NeoBundle 'kchmck/vim-coffee-script'
+" ES6
 NeoBundle 'isRuslan/vim-es6'
-NeoBundle 'matthewsimo/angular-vim-snippets'
+" React JS
 NeoBundle 'mxw/vim-jsx'
-
+" Angular JS
+"NeoBundle 'burnettk/vim-angular'
+"NeoBundle 'seratch/vim-angular-coffee'
+"NeoBundle 'matthewsimo/angular-vim-snippets'
 
 "-------------------------"
 " Vimim for chinese input
 "-------------------------"
 "NeoBundle 'vimim/vimim'
+
+" Supporting customized script {
+if filereadable(expand("~/.vim/neobundles.vim.after"))
+  source ~/.vim/neobundles.vim.after
+endif
+" }
 
 call neobundle#end()
 
