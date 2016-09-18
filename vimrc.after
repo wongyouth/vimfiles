@@ -1,4 +1,5 @@
 " Enable fold
 set fdm=indent
 set foldlevel=2
+set nofoldenable
 map <2-LeftMouse> za

@@ -61,7 +61,7 @@ NeoBundle 'lucapette/vim-ruby-doc'
 NeoBundle 'lucapette/vim-jquery-doc'
 NeoBundle 'rizzatti/dash.vim'
 
-NeoBundle 'scrooloose/syntastic'
+"NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'wincent/Command-T'
 NeoBundle 'sjl/gundo.vim'
 NeoBundle 'slim-template/vim-slim'
@@ -123,7 +123,7 @@ NeoBundle 'Shougo/neocomplcache.vim'
 "NeoBundle 'Shougo/vimshell.vim'
 NeoBundle 'Shougo/neosnippet.vim'
 NeoBundle 'Shougo/neosnippet-snippets'
-" NeoBundle 'honza/vim-snippets'
+NeoBundle 'honza/vim-snippets'
 " NeoBundle 'wongyouth/vim-snippets', 'sugar', {'name': 'wongyouth-vim-snippets'}
 
 "NeoBundle 'MarcWeber/vim-addon-mw-utils'
@@ -145,6 +145,9 @@ NeoBundle 'kchmck/vim-coffee-script'
 NeoBundle 'isRuslan/vim-es6'
 " React JS
 NeoBundle 'mxw/vim-jsx'
+NeoBundle 'bentayloruk/vim-react-es6-snippets'
+NeoBundle 'posva/vim-vue'
+" NeoBundle 'darthmall/vim-vue'
 " Angular JS
 "NeoBundle 'burnettk/vim-angular'
 "NeoBundle 'seratch/vim-angular-coffee'
@@ -154,6 +157,7 @@ NeoBundle 'mxw/vim-jsx'
 " Vimim for chinese input
 "-------------------------"
 "NeoBundle 'vimim/vimim'
+NeoBundle 'elzr/vim-json'
 
 " Supporting customized script {
 if filereadable(expand("~/.vim/neobundles.vim.after"))

@@ -254,6 +254,8 @@ nnoremap <leader>ge :Gedit<CR>
 nnoremap <leader>gp :Git push<CR>
 " }
 
+noremap <C-CR> <Esc>A,
+
 "----------------------------
 " Abbreviation
 "----------------------------
@@ -278,4 +280,4 @@ endif
 
 " allow arrow to go to previous or next line
 set whichwrap+=<,>,[,],h,l
-
+let g:vim_json_syntax_conceal = 0

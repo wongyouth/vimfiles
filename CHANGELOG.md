@@ -1,5 +1,13 @@
 ## Change log
 
+[2016-09-18]
+
+* add `vim-json`
+
+[2016-06-21]
+
+* add `bentayloruk/vim-react-es6-snippets`
+
 [2015-09-02 10:12]
 
 * add `isRuslan/vim-es6`

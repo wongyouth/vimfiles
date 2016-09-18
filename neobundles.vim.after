@@ -1,5 +1,3 @@
-" Diable syntastic because it's slow sometime.
-"NeoBundleDisable syntastic
 
 " Switch to neocomplete which is faster, but you have to use vim with lua
 " enabled. To check if lua enabled, run `:echo has("lua")`
@@ -10,6 +8,8 @@ if has('lua')
   NeoBundleDisable neocomplcache.vim
   NeoBundle 'Shougo/neocomplete.vim'
   NeoBundle 'airblade/vim-gitgutter'
+  " Enable syntastic
+  "NeoBundle 'scrooloose/syntastic'
 endif
 
 " vimshell's a little bit heavy, so I moved it here
