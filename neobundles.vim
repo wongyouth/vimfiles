@@ -41,7 +41,7 @@ NeoBundle 'tpope/vim-rvm'
 "--------------------------
 " utility
 "--------------------------
-NeoBundle 'edsono/vim-matchit'
+NeoBundle 'adelarsq/vim-matchit'
 NeoBundle 'Raimondi/delimitMate'
 NeoBundle 'greyblake/vim-preview'
 NeoBundle 'vim-scripts/jsbeautify'
