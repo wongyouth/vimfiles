@@ -1,2 +1,2 @@
-map <D-F1> :Dash<CR>
-map <M-F1> :Dash!<CR>
+map <M-1> <Plug>DashSearch
+map <M-2> <Plug>DashGlobalSearch

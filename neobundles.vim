@@ -58,8 +58,11 @@ NeoBundle 'vim-ruby/vim-ruby'
 
 " document viewer
 NeoBundle 'lucapette/vim-ruby-doc'
-NeoBundle 'lucapette/vim-jquery-doc'
-NeoBundle 'rizzatti/dash.vim'
+"NeoBundle 'lucapette/vim-jquery-doc'
+"NeoBundle 'rizzatti/dash.vim'
+NeoBundle 'rhysd/devdocs.vim'
+
+NeoBundle 'thoughtbot/vim-rspec'
 
 "NeoBundle 'scrooloose/syntastic'
 "NeoBundle 'wincent/Command-T'
